@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/_5sdp"
+    android:layout_marginBottom="@dimen/_5sdp"
+    android:paddingBottom="@dimen/_8sdp"
+    android:layout_marginHorizontal="@dimen/_5sdp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:padding="@dimen/_4sdp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/cardView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ImageViewItem"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/burger_1" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ImageViewHeart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                app:layout_constraintEnd_toEndOf="@id/cardView"
+                app:layout_constraintTop_toTopOf="@id/cardView"
+                app:srcCompat="@drawable/bg_heart" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_12sdp"
+                android:background="@drawable/bg_list"
+                android:padding="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@id/cardView"
+                app:layout_constraintStart_toStartOf="@id/cardView">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewClock"
+                    android:layout_width="@dimen/_13sdp"
+                    android:layout_height="@dimen/_13sdp"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintTime"
+                    app:layout_constraintStart_toStartOf="@id/constraintTime"
+                    app:layout_constraintTop_toTopOf="@+id/constraintTime"
+                    app:srcCompat="@drawable/ic_clock" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_4sdp"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:text="@string/_25_min"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/_10ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintTime"
+                    app:layout_constraintStart_toEndOf="@id/imageViewClock"
+                    app:layout_constraintTop_toTopOf="@id/constraintTime" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/burger_king"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewType"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/veg_jumboburger"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLocation"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            android:layout_marginTop="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@id/textViewType"
+            app:srcCompat="@drawable/ic_location" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/_8502_preston"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewLocation"
+            app:layout_constraintStart_toEndOf="@id/imageViewLocation"
+            app:layout_constraintTop_toTopOf="@id/imageViewLocation" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewStart"
+            android:layout_width="@dimen/_13sdp"
+            android:layout_height="@dimen/_13sdp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewPrice"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@+id/textViewPrice"
+            app:srcCompat="@drawable/star_1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:fontFamily="@font/sf_pro_text_medium"
+            android:text="@string/_4_8"
+            android:textColor="@color/gray"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewPrice"
+            app:layout_constraintStart_toEndOf="@id/imageViewStart"
+            app:layout_constraintTop_toTopOf="@id/textViewPrice" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_text_bold"
+            android:text="@string/_15_00"
+            android:textColor="#0D4598"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintTop_toBottomOf="@+id/textViewLocation" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.cardview.widget.CardView>

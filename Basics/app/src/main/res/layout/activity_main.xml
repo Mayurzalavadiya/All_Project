@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.1"
+                app:layout_constraintLeft_toRightOf="@id/text_name" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_id"
+                style="@style/Text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:text="Id: "
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_name"
+                style="@style/Text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Name: "
+                app:layout_constraintStart_toStartOf="@id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/text_id"
+                tools:ignore="MissingConstraints" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_number"
+                style="@style/Text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Number: "
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/text_name"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_city"
+                style="@style/Text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="City: "
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/text_number"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text_salary"
+                style="@style/Text_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="Salary: "
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toBottomOf="@id/text_city"
+                tools:ignore="MissingConstraints" />
+
+            <!--    <androidx.constraintlayout.widget.Barrier-->
+            <!--        android:id="@+id/barrier"-->
+            <!--        android:layout_width="wrap_content"-->
+            <!--        android:layout_height="wrap_content"-->
+            <!--        android:layout_marginLeft="5dp"-->
+            <!--        app:barrierDirection="right"-->
+            <!--        app:constraint_referenced_ids=",text_name,text_name, text_number, text_city, text_salary" />-->
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittext_id"
+                style="@style/EditText_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter id"
+                android:inputType="number"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_id"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/text_id"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittext_name"
+                style="@style/EditText_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter name"
+                android:inputType="text"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_name"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/text_name"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittext_number"
+                style="@style/EditText_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter number"
+                android:inputType="number"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_number"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/text_number"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittext_city"
+                style="@style/EditText_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter city"
+                android:inputType="text"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_city"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/text_city"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittext_salary"
+                style="@style/EditText_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/edittext_border"
+                android:hint="Enter salary"
+                android:inputType="number"
+                android:padding="5dp"
+                app:layout_constraintBottom_toBottomOf="@id/text_salary"
+                app:layout_constraintEnd_toStartOf="@id/guideline2"
+                app:layout_constraintStart_toStartOf="@id/barrier"
+                app:layout_constraintTop_toTopOf="@id/text_salary"
+                tools:ignore="MissingConstraints" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button_submit"
+                style="@style/Button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/button_border"
+                android:padding="10dp"
+                android:text="Submit"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittext_salary" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.9"
+                app:layout_constraintLeft_toRightOf="@id/edittext_id" />
+
+            <androidx.constraintlayout.widget.Barrier
+                android:id="@+id/barrier"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:barrierDirection="right"
+                app:constraint_referenced_ids="text_id,text_salary,text_city,text_name,text_number" />
+
+           <ListView
+               android:id="@+id/list"
+               android:layout_width="match_parent"
+               android:layout_height="fill_parent"
+               app:layout_constraintTop_toBottomOf="@id/edittext_salary"
+               android:layout_marginTop="20dp"
+               android:layout_marginHorizontal="20dp"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

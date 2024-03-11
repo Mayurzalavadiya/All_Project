@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_white_10px">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewHotel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="@dimen/_7sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewHotel"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            app:srcCompat="@drawable/favorite_1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewFavorite"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_margin="@dimen/_8sdp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_white72per_8px"
+        android:padding="@dimen/_8sdp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/cardviewHotel"
+        app:layout_constraintTop_toTopOf="@id/cardviewHotel"
+        app:srcCompat="@drawable/favorite_red_icon" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/_12sdp"
+        android:background="@drawable/bg_white_6px"
+        android:paddingHorizontal="@dimen/_8sdp"
+        android:paddingVertical="@dimen/_7sdp"
+        app:layout_constraintBottom_toBottomOf="@id/cardviewHotel"
+        app:layout_constraintStart_toStartOf="@id/cardviewHotel">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewPrice"
+            style="@style/TextView.Bold.sp16.colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview__250"
+            app:layout_constraintBottom_toBottomOf="@id/constraintPrice"
+            app:layout_constraintEnd_toStartOf="@id/textViewPerNight"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/constraintPrice"
+            app:layout_constraintTop_toTopOf="@id/constraintPrice" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPerNight"
+            style="@style/TextView.Regular.sp12.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/textview_night"
+            app:layout_constraintBottom_toBottomOf="@id/constraintPrice"
+            app:layout_constraintEnd_toEndOf="@id/constraintPrice"
+            app:layout_constraintStart_toEndOf="@id/textviewPrice"
+            app:layout_constraintTop_toTopOf="@id/constraintPrice" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewHotel"
+        style="@style/TextView.Regular.sp13.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        android:layout_marginBottom="@dimen/_12sdp"
+        android:background="@drawable/bg_white_5px"
+        android:paddingHorizontal="@dimen/_11sdp"
+        android:paddingVertical="@dimen/_5sdp"
+        android:text="@string/textview_hotel"
+        app:layout_constraintBottom_toBottomOf="@id/cardviewHotel"
+        app:layout_constraintEnd_toEndOf="@id/cardviewHotel" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewHotelName"
+        style="@style/TextView.Bold.sp16.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/textview_sunrise_smart_hotel"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/cardviewHotel" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginBottom="@dimen/_15sdp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewHotelName"
+        app:srcCompat="@drawable/location_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewLocation"
+        style="@style/TextView.Regular.sp13.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/textview_new_york_usa"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewLocation"
+        app:layout_constraintEnd_toStartOf="@id/view"
+        app:layout_constraintStart_toEndOf="@id/imageviewLocation"
+        app:layout_constraintTop_toTopOf="@id/imageviewLocation"
+        app:layout_constraintWidth_max="@dimen/_130sdp" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_1sdp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:background="@color/Gray"
+        app:layout_constraintBottom_toBottomOf="@id/textviewLocation"
+        app:layout_constraintEnd_toStartOf="@id/textviewKiloMeter"
+        app:layout_constraintStart_toEndOf="@id/textviewLocation"
+        app:layout_constraintTop_toTopOf="@id/textviewLocation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewKiloMeter"
+        style="@style/TextView.Regular.sp12.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/textview__2_5km"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewLocation"
+        app:layout_constraintStart_toEndOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/imageviewLocation"
+        app:layout_constraintWidth_max="@dimen/_70sdp"
+        app:layout_goneMarginStart="@dimen/_11sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewRating"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:adjustViewBounds="true"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toStartOf="@id/textviewRating"
+        app:layout_constraintTop_toBottomOf="@id/textviewHotelName"
+        app:srcCompat="@drawable/star_icon" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewRating"
+        style="@style/TextView.Regular.sp12.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_11sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/textview__4_5"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewLocation"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintTop_toTopOf="@id/imageviewLocation"
+        app:layout_constraintWidth_max="@dimen/_20sdp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

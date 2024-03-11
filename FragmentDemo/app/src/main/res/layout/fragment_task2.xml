@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task3.adapter.Task2Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout2"
+        android:layout_width="wrap_content"
+        android:layout_margin="10dp"
+        android:layout_height="match_parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn111"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="@string/one"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout2"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn112"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="2"
+            app:layout_constraintStart_toEndOf="@id/btn111"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn113"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="3"
+            app:layout_constraintStart_toEndOf="@id/btn112"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn114"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="4"
+            app:layout_constraintStart_toEndOf="@id/btn113"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn115"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="5"
+            app:layout_constraintStart_toEndOf="@id/btn114"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn116"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="6"
+            app:layout_constraintStart_toEndOf="@id/btn115"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn117"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="7"
+            app:layout_constraintStart_toEndOf="@id/btn116"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn118"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="8"
+            app:layout_constraintStart_toEndOf="@id/btn117"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout2" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</HorizontalScrollView>

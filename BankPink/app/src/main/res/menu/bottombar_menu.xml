@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/selector_icon_home"
+        android:title="@string/home" />
+
+    <item
+        android:id="@+id/bottomShare"
+        android:icon="@drawable/icon_mycard"
+        android:title="@string/my_card" />
+
+    <item
+        android:id="@+id/bottomStatistics"
+        android:title="@string/statistics"
+        android:icon="@drawable/icon_statistics" />
+    <item
+        android:id="@+id/bottomSettings"
+        android:title="@string/settings"
+        android:icon="@drawable/icon_settings" />
+
+</menu>

@@ -1,0 +1,81 @@
+<resources>
+    <string name="app_name">Sample 26</string>
+
+    //Validation
+    <string name="validation_please_enter_mobile_number">Please enter mobile number</string>
+    <string name="validation_please_enter_a_valid_mobile_number">Please enter a 10 digits mobile number</string>
+    <string name="validation_please_enter_an_email_address">Please enter an email address</string>
+    <string name="validation_please_enter_proper_otp">Please enter proper OTP</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="validation_please_enter_a_password">Please enter a password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_please_enter_a_confirm_password">Please enter a confirm password</string>
+    <string name="validation_password_mitch_match">Password mitch match</string>
+    <string name="validation_signup_successfully">Signup Successfully</string>
+    <string name="validation_login_successfully">Login Successfully</string>
+    <string name="validation_create_successfully">Create Successfully</string>
+    <string name="validation_update_successfully">Update Successfully</string>
+    <string name="validation_forgot_password_successfully">Forgot Password Successfully</string>
+    <string name="validation_please_check_terms_condition">Please check terms &amp; conditions</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="log_in_to_hyperlink">Log in to Hyperlink</string>
+    <string name="welcome_back_you_have_been_missed">Welcome back. You have been missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="log_in">Log In</string>
+    <string name="don_t_have_an_account_sign_up">Don’t have an account? Sign up</string>
+    <string name="forgot_password_title">Forgot Password</string>
+    <string name="submit">Submit</string>
+    <string name="back_to_log_in">Back to Log in</string>
+    <string name="sign_up_to_hyperlink">Sign up to Hyperlink</string>
+    <string name="let_s_get_started">Let’s get started!</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="already_have_an_account_log_in">Already have an account? Log in</string>
+    <string name="agrees_to_the_terms_conditions_and_privacy_policy"><![CDATA[Agrees to the terms & conditions and privacy policy]]></string>
+    <string name="otp_verification">OTP Verification</string>
+    <string name="fusce_eget_molestie_maecenas_facilisi_non_blandit_lobortis_at_laoreet">Fusce eget molestie maecenas facilisi non blandit lobortis at laoreet.</string>
+    <string name="enter_the_otp_code_from_hlis_just_sent_you_at_480_555_0103">Enter the OTP code from HLIS, just sent you at (480) 555 - 0103</string>
+    <string name="verify">Verify</string>
+    <string name="resend_code">Resend Code?</string>
+    <string name="expired_in_00_22">Expired In 00:22</string>
+    <string name="new_york_usa">New York, USA</string>
+    <string name="_30_discount_for_nfast_food">30% Discount for\nFast Food</string>
+    <string name="search_for_dishes_restaurant"><![CDATA[Search for Dishes & Restaurant]]></string>
+    <string name="dui_lacinia_a_porta_nulla_ullamcorper_bibendum_non_feugiat_semper_dolor_elementum_at_consequat_integer_eu_mi_ac_cursus_ut_faucibus_nibh">Dui lacinia a porta nulla ullamcorper. Bibendum non feugiat semper dolor elementum at consequat integer. Eu mi ac, cursus ut. Faucibus nibh</string>
+    <string name="next">Next</string>
+    <string name="your_order_at_your_door_in_minutes_1">Your order at your door in minutes</string>
+    <string name="your_order_at_your_door_in_minutes_2">Your order at your door in 2 minutes</string>
+    <string name="your_order_at_your_door_in_minutes_3">Your order at your door in 3 minutes</string>
+    <string name="categories">Categories</string>
+    <string name="view_all">View All</string>
+    <string name="egg_chicken_burger">Egg Chicken Burger</string>
+    <string name="burger_description">Nunc, pharetra nibh ipsum dictum sagittis, ac, sem quis amet. Hendrerit sit ac id accumsan donec. A neque, euismod quam at magna iaculis lorem. Non neque aliquam, neque consequat risus, viverra. Vulputate id egestas massa id. Sed malesuada cras ac et at aliquam dignissim. Feugiat nulla aliquet nisi, porta quis nec vulputate tortor, ante. Mattis luctus posuere ut bibendum egestas. Dignissim mauris dui elit mi aliquet. Morbi tellus, ut enim platea molestie.</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="_7_00">$7.00</string>
+    <string name="_1">1</string>
+    <string name="burger_king">Burger King</string>
+    <string name="veg_jumboburger">Veg. JumboBurger</string>
+    <string name="_8502_preston">8502 Preston...</string>
+    <string name="_4_8">4.8</string>
+    <string name="_15_00">$15.00</string>
+    <string name="_25_min">25 Min</string>
+    <string name="home">Home</string>
+    <string name="shopping">Shopping</string>
+    <string name="heart">Heart</string>
+    <string name="profile">Profile</string>
+    <string name="what_would_you_like_to_eat">What would you like to eat?</string>
+    <string name="burger">Burger</string>
+    <string name="pizza">Pizza</string>
+    <string name="nearby_restaurants">Nearby Restaurants</string>
+    <string name="sevenchiefs_restaurant">Sevenchiefs Restaurant</string>
+    <string name="_230_m">230 m</string>
+    <string name="_8502_preston_rd_ingle">8502 Preston Rd. Ingle...</string>
+    <string name="_25_30_min">25-30 Min</string>
+    <string name="eve_holt_reqres_in">eve.holt@reqres.in</string>
+    <string name="data_not_available">Data not Available</string>
+    <string name="exit">Exit</string>
+
+</resources>

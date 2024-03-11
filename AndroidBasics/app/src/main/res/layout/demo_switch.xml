@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Activity.DemoSwitch">
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:fontFamily="@font/roboclonegrad"
+        android:padding="10dp"
+        android:text="Switch 1"
+        android:textOff="No"
+        android:textOn="Yes"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:showText="true" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:checked="false"
+        android:padding="10dp"
+        android:text="fan is On"
+        android:textSize="20sp"
+        android:thumb="@drawable/circle_style"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch1"
+        app:showText="true"
+        app:thumbTextPadding="5dp"
+        app:trackTint="@color/blue" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/switch3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:checked="false"
+        android:padding="10dp"
+        android:text="light is On"
+        android:textSize="20sp"
+        android:thumb="@drawable/switch_thumb"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch2"
+        app:track="@drawable/switch_track" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButton1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:buttonTint="@color/red"
+        android:fontFamily="@font/roboclone3d"
+        android:text="Android"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/switch3" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButton2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:button="@null"
+        android:drawableStart="@drawable/radio_button"
+        android:drawableEnd="@drawable/ic_home"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Android"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButton1" />
+
+    <androidx.appcompat.widget.AppCompatRadioButton
+        android:id="@+id/radioButton3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:button="@null"
+        android:checked="false"
+        android:drawableStart="@drawable/switch_thumb"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Java"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButton2" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/radioButton3">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonMale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" Male"
+            app:layout_constraintEnd_toStartOf="@id/radioButtonFemale"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/RadioGroupGender"
+            app:layout_constraintTop_toTopOf="@id/RadioGroupGender" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonFemale"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Female"
+            app:layout_constraintEnd_toStartOf="@id/radioButtonTransgender"
+            app:layout_constraintStart_toEndOf="@id/radioButtonMale"
+            app:layout_constraintTop_toTopOf="@id/RadioGroupGender" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:id="@+id/radioButtonTransgender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:text="Transgender"
+            app:layout_constraintEnd_toEndOf="@id/RadioGroupGender"
+            app:layout_constraintStart_toEndOf="@id/radioButtonFemale"
+            app:layout_constraintTop_toTopOf="@id/RadioGroupGender" />
+
+    </RadioGroup>
+</androidx.constraintlayout.widget.ConstraintLayout>

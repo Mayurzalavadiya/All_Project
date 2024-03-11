@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="NONE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="fcb6ff58-44f7-45a1-8d33-acd40c8dc82e" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/BankManagementSystem/Account.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/BankManagementSystem/Bank.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/BankManagementSystem/Branch.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/BankManagementSystem/User.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/CLI_Bank.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/HigherOrder.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Lambda.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Constructor/Constructor1.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/EnumClass/EnumWithCompanion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/EnumClass/EnumWithabstract.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/EnumClass/Enumclasses.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/EnumClass/ReviewEnum.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Review/BankManagement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Review/ReviewTask.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/SealedClass/Sealed.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/SealedClass/SealedWithInterface.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/SealedClass/SealedWithWhen.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/SealedClass/sealedWithCompanion.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/SealedClass.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task3/Collections.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task3/Constructor.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task3/Interfacewithlambda.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task3/Society.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task3/inheritinterfaces.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Collections/ArrayList.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Task/CLI_bank.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/it_company/BankManagement.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/vehicleTask/Vehicle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/ArrayList.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/ArrayList.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Constructor/Constructor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Constructor/Constructor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Interface/Interface.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Interface/Interface.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Loop/Forloop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Loop/Forloop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Collection/Arraylint.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Arraylint.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Collection/CLI_Bank.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Collection/Hashmap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Hashmap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Collection/Hashset.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Hashset.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Factorial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Factorial.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task1/Filter.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Filter.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task1/Flatmap.kt" beforeDir="false" afterPath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Collections/Collection/Flatmap.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task2/HigherOrder.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Kotlin_Basics/app/src/main/java/com/example/kotlin_basics/Task/Task2/Lambda.kt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Collections/MutableListOf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Collections/MutableListOf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Collections/SetOf.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Collections/SetOf.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Main.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Angle/TopLeft.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Angle/TopLeft.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Angle/TopRight.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Angle/TopRight.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Diamond/diamond.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Diamond/diamond.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Patterns.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Patterns.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Bottom.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Bottom.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Left.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Left.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Top.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangel/Top.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangle.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/PatternTask/Triangle.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Task/Factorial.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/GitCommands/src/main/kotlin/Task/Factorial.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Bank/HDFC.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/bank/HDFC.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Bank/ICIC.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/bank/ICIC.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Bank/RBI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/bank/RBI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Bank/SBI.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/bank/SBI.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Builder/Adani.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/builder/Adani.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Builder/Builder.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/builder/Builder.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Builder/Shivalik.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/builder/Shivalik.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Building/Apartment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/building/Apartment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Building/Building.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/building/Building.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Building/PurshottamDham.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/building/PurshottamDham.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Building Management/Building/Tarnament.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/buildingManagement/building/Tarnament.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Constructor/DefaltConstructor.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Constructor/DefaltConstructor.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Loop/ForLoop.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Loop/ForLoop.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Loop/Ifelse.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Loop/Ifelse.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Testing/Test.kt" beforeDir="false" afterPath="$PROJECT_DIR$/OOPS task/OOPSConcepts/src/main/kotlin/Testing/Test.kt" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/Kotlin_Basics" />
+  </component>
+  <component name="ProjectId" id="2Xy4RQS3pcPJdpzIbO4IkftDcXV" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "cidr.known.project.marker": "true",
+    "last_opened_file_path": "/home/hlink/Desktop/Project code"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fcb6ff58-44f7-45a1-8d33-acd40c8dc82e" name="Changes" comment="" />
+      <created>1699587976747</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1699587976747</updated>
+    </task>
+    <servers />
+  </component>
+</project>

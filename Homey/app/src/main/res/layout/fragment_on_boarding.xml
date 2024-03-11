@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".ui.auth.fragment.OnBoardingFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_25sdp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewIndicator"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/viewPager" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewLogo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_67" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewCountryFlag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_5sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageviewLogo"
+        app:layout_constraintEnd_toStartOf="@id/textview_language"
+        app:layout_constraintHorizontal_bias="1"
+        app:layout_constraintStart_toEndOf="@id/imageviewLogo"
+        app:layout_constraintTop_toTopOf="@+id/imageviewLogo"
+        app:srcCompat="@drawable/language" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textview_language"
+        style="@style/TextView.Regular.sp14.Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:maxWidth="@dimen/_80sdp"
+        android:text="@string/textview_english"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewCountryFlag"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintTop_toTopOf="@id/imageviewCountryFlag" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="@dimen/_28sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintBottom_toTopOf="@id/buttonSkip"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        tools:listitem="@layout/indicator_layout" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSkip"
+        style="@style/Button.Regular.sp16.White.Background"
+        android:layout_marginBottom="@dimen/_14sdp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:text="@string/button_skip"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/guideLineStart" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

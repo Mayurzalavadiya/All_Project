@@ -1,0 +1,59 @@
+<resources>
+    <string name="app_name">Layouts</string>
+
+    <string name="clear">C</string>
+    <string name="brackets">( )</string>
+    <string name="percentage">%</string>
+    <string name="division">÷</string>
+    <string name="seven">7</string>
+    <string name="eight">8</string>
+    <string name="nine">9</string>
+    <string name="multiplication">×</string>
+    <string name="four">4</string>
+    <string name="five">5</string>
+    <string name="six">6</string>
+    <string name="sub">-</string>
+    <string name="one">1</string>
+    <string name="two">2</string>
+    <string name="three">3</string>
+    <string name="addition">+</string>
+    <string name="add_sub">+/-</string>
+    <string name="zero">0</string>
+    <string name="dot">.</string>
+    <string name="equal">=</string>
+    <string name="test1">Test1</string>
+    <string name="test2">Test2</string>
+    <string name="test3">Test3</string>
+    <string name="test4">Test4</string>
+    <string name="test5">Test5</string>
+    <string name="test6">Test6</string>
+    <string name="test7">Test7</string>
+    <string name="test8">Test8</string>
+    <string name="test9">Test9</string>
+    <string name="this_is_text_2">This is text 2</string>
+    <string name="paragraph">Kotlin is a general-purpose, statically typed, and open-source programming language.</string>
+    <string name="ten">10</string>
+    <string name="eleven">11</string>
+    <string name="b">B</string>
+    <string name="button_1">Button 1</string>
+    <string name="button_2">Button 2</string>
+    <string name="twelve">12</string>
+    <string name="thirteen">13</string>
+    <string name="fourteen">14</string>
+    <string name="fifteen">15</string>
+    <string name="sixteen">16</string>
+    <string name="_17">17</string>
+    <string name="_18">18</string>
+    <string name="_19">19</string>
+    <string name="_20">20</string>
+    <string name="_21">21</string>
+    <string name="_22">22</string>
+    <string name="_23">23</string>
+    <string name="btn">Btn</string>
+    <string name="text_view">Text View</string>
+    <string name="title">Title:- Image Button</string>
+    <string name="paragraph_2">Nowadays, image buttons play a big role in making the android application more interactive and user-friendly. Be it any social media app like Instagram or Facebook or any shopping app or streaming app, each application uses this feature widely. In this article, we will take a look at the implementation of this section in Android.</string>
+    <string name="pre"><![CDATA[<< Pre]]></string>
+    <string name="next"><![CDATA[Next >>]]></string>
+
+</resources>

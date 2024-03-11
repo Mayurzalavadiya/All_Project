@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.auth.fragment.ManageAddressFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_14sdp"
+            android:padding="@dimen/_5sdp"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/avatar" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTitle"
+            style="@style/TextView.Bold.sp20.colorPrimaryDark"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_manage_address"
+            app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_29sdp"
+            android:background="@drawable/bg_background_register"
+            app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewTitle">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/constraintAddAddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingTop="@dimen/_11sdp"
+                android:paddingEnd="@dimen/_12sdp"
+                android:paddingBottom="@dimen/_8sdp"
+                app:layout_constraintTop_toTopOf="@id/constraint">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageviewLogo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintAddAddress"
+                    app:layout_constraintStart_toStartOf="@id/constraintAddAddress"
+                    app:layout_constraintTop_toTopOf="@id/constraintAddAddress"
+                    app:srcCompat="@drawable/frame__2_" />
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textviewDes"
+                    style="@style/TextView.Regular.sp16.colorPrimaryDark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="@dimen/_6sdp"
+                    android:text="@string/textview_add_new_address"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintAddAddress"
+                    app:layout_constraintHorizontal_bias="0"
+                    app:layout_constraintStart_toEndOf="@id/imageviewLogo"
+                    app:layout_constraintTop_toTopOf="@id/constraintAddAddress" />
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageviewAddAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintBottom_toBottomOf="@id/constraintAddAddress"
+                    app:layout_constraintEnd_toEndOf="@id/constraintAddAddress"
+                    app:layout_constraintTop_toTopOf="@id/constraintAddAddress"
+                    app:srcCompat="@drawable/icon_add" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_1sdp"
+                app:layout_constraintTop_toBottomOf="@id/constraintAddAddress"
+                tools:listitem="@layout/address_list_view" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

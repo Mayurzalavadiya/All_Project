@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".Activity.DemoCheckBoxRadioButton">
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_button"
+        android:button="@null"
+        android:drawableStart="@drawable/checkbox_check"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        android:text="checkbox 1"
+        android:textSize="20sp"
+        android:checked="false"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatCheckBox
+        android:id="@+id/checkBox2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/custom_button"
+        android:button="@null"
+        android:drawableStart="@drawable/switch_thumb"
+        android:drawablePadding="10dp"
+        android:paddingHorizontal="10dp"
+        android:text="checkbox 2"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/checkBox1"
+        app:layout_constraintStart_toStartOf="@id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@id/checkBox1" />
+
+    <RadioGroup
+        android:id="@+id/RadioGroupGender"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintEnd_toEndOf="@id/checkBox1"
+        app:layout_constraintStart_toStartOf="@id/checkBox1"
+        app:layout_constraintTop_toBottomOf="@id/checkBox2">
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:text="Male" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:buttonTint="@color/red"
+            android:checked="true"
+            android:padding="10dp"
+            android:text="Female"
+            />
+
+  
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:layout_marginStart="8dp"
+            android:button="@drawable/circle_style"
+            android:padding="10dp"
+            android:text="Other" />
+
+        <androidx.appcompat.widget.AppCompatRadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:button="@drawable/checkbox_check"
+            android:padding="10dp"
+            android:text="Other" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textView1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:elevation="10dp"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="this is text view"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/RadioGroupGender"
+        app:layout_constraintStart_toStartOf="@id/RadioGroupGender"
+        app:layout_constraintTop_toBottomOf="@id/RadioGroupGender" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/custom_button"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_marginHorizontal="10dp"
+        android:text="this is text view"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:translationZ="10dp"
+        app:layout_constraintEnd_toEndOf="@id/RadioGroupGender"
+        app:layout_constraintStart_toStartOf="@id/RadioGroupGender"
+        app:layout_constraintTop_toBottomOf="@id/textView1" />
+</androidx.constraintlayout.widget.ConstraintLayout>

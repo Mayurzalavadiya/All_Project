@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/greyBackground"
+    android:fillViewport="true"
+    tools:context=".ui.productTask.fragment.AddProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMainTitle"
+            style="@style/textView.title.add"
+            android:text="@string/add_course"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewMainTitle"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+            app:layout_constraintTop_toTopOf="@id/textViewMainTitle"
+            app:srcCompat="@drawable/baseline_keyboard_backspace_24" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintMain"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_add_product_items"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+            app:layout_constraintTop_toBottomOf="@id/textViewMainTitle">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardViewImage"
+                style="@style/card"
+                android:layout_height="@dimen/_150sdp"
+                android:backgroundTint="#F6F7F9"
+                app:cardElevation="0dp"
+                app:layout_constraintEnd_toEndOf="@id/constraintMain"
+                app:layout_constraintStart_toStartOf="@id/constraintMain"
+                app:layout_constraintTop_toTopOf="@id/constraintMain">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/imageViewImage"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:adjustViewBounds="true"
+                    android:visibility="visible"
+                    app:layout_constraintDimensionRatio="1" />
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintImage"
+                    android:visibility="gone"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/_30sdp"
+                        android:layout_height="0dp"
+                        android:layout_marginBottom="@dimen/_8sdp"
+                        android:adjustViewBounds="true"
+                        app:layout_constraintBottom_toTopOf="@id/textViewImage"
+                        app:layout_constraintDimensionRatio="1:1"
+                        app:layout_constraintEnd_toEndOf="@id/constraintImage"
+                        app:layout_constraintStart_toStartOf="@id/constraintImage"
+                        app:layout_constraintTop_toTopOf="@id/constraintImage"
+                        app:layout_constraintVertical_chainStyle="packed"
+                        app:srcCompat="@drawable/frame" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:id="@+id/textViewImage"
+                        style="@style/textView.addImage"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/add_image"
+                        app:layout_constraintBottom_toBottomOf="@id/constraintImage"
+                        app:layout_constraintEnd_toEndOf="@id/constraintImage"
+                        app:layout_constraintStart_toStartOf="@id/constraintImage"
+                        app:layout_constraintTop_toBottomOf="@id/imageView" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutCourseName"
+                style="@style/textInputLayout"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:hint="@string/course_name"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+                >
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextCourseName"
+                    style="@style/textInputEditText"
+                    android:inputType="text"
+                    android:textColor="@color/blueAddText" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutStartDate"
+                style="@style/textInputLayout"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:hint="@string/start_date"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayoutCourseName">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextStartDate"
+                    style="@style/textInputEditText"
+                    android:focusable="false"
+                    android:inputType="datetime" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutEndDate"
+                style="@style/textInputLayout"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:hint="@string/end_date"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayoutStartDate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextEndDate"
+                    style="@style/textInputEditText"
+                    android:focusable="false"
+                    android:inputType="datetime" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutDescription"
+                style="@style/textInputLayout"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:hint="@string/description"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayoutEndDate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextDescription"
+                    style="@style/textInputEditText"
+                    android:lineSpacingExtra="@dimen/_3sdp"
+                    android:lines="3" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPrice"
+                style="@style/textInputLayout"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:hint="@string/price"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayoutDescription">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/edittextPrice"
+                    style="@style/textInputEditText"
+                    android:inputType="number" />
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonAddCourse"
+                style="@style/button.0dp"
+                android:layout_marginTop="@dimen/_17sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:backgroundTint="@color/blue"
+                android:text="@string/add_course"
+                app:layout_constrainedHeight="true"
+                app:layout_constraintBottom_toBottomOf="@id/constraintMain"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textInputLayoutPrice" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

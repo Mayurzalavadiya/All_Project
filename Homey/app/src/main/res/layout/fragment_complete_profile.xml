@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.auth.fragment.CompleteProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewVerification"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview_personal_info"
+            app:layout_constraintBottom_toBottomOf="@id/imageviewBack"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/imageviewBack"
+            app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewDescription"
+            style="@style/TextView.Bold.sp22.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="@string/textview_before_we_start_nwhat_do_we_call_you"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewVerification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewUpload"
+            style="@style/TextView.Regular.sp14.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:ellipsize="end"
+            android:text="@string/textview_upload_your_profile_image_name"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewDescription" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_19sdp"
+            android:background="@drawable/bg_white54per_15px"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewUpload">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineStart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineEnd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageviewUserProfile"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="centerCrop"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:shapeAppearanceOverlay="@style/customRoundedImageViewTop" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewUser"
+                android:layout_width="wrap_content"
+                android:layout_height="0dp"
+                android:adjustViewBounds="true"
+                app:layout_constraintBottom_toBottomOf="@id/imageviewUserProfile"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/imageviewUserProfile"
+                app:layout_constraintStart_toStartOf="@id/imageviewUserProfile"
+                app:layout_constraintTop_toTopOf="@id/imageviewUserProfile"
+                app:srcCompat="@drawable/profile_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="@id/imageviewUser"
+                app:layout_constraintEnd_toEndOf="@id/imageviewUser"
+                app:srcCompat="@drawable/add_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewFirstName"
+                style="@style/TextView.Regular.sp13.PrimaryBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_first_name"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/imageviewUserProfile" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextFirstName"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_first_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_17sdp"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewFirstName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewLastName"
+                style="@style/TextView.Regular.sp13.PrimaryBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_last_name"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/edittextFirstName" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextLastName"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_last_name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:paddingBottom="@dimen/_17sdp"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewLastName" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSubmit"
+            style="@style/Button.Regular.sp16.White.Background"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="@string/submit"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/constraint"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

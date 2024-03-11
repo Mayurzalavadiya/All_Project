@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="textView">
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+    <style name="button">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">@color/blue</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="editText">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/blue</item>
+        <item name="android:padding">15dp</item>
+        <item name="android:backgroundTint">@color/gray</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColorHint">@color/gray</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="editText.password" parent="editText">
+        <item name="android:letterSpacing">0.1</item>
+    </style>
+
+
+    <style name="image_unselected">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginLeft">@dimen/_5sdp</item>
+        <item name="srcCompat">@drawable/bg_unselected_indicator</item>
+    </style>
+</resources>

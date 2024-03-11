@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.auth.fragment.InterestFragment">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_14sdp"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintStart_toStartOf="@id/guidLineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/avatar" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewTitle"
+        style="@style/TextView.PoppinsMedium.sp16.Black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_interest"
+        app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidLineStart"
+        app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDes"
+        style="@style/TextView.PoppinsRegular.sp16.GreyLight2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/textview_tap_on_the_interest_you_love_nthis_will_help_you_us_to_find_ads_you_want"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewTitle" />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19sdp"
+        app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewDes" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSubmit"
+        style="@style/Button.Medium.sp16.colorPrimaryDark.Background"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:fontFamily="@font/poppins_medium"
+        android:text="@string/button_submit"
+        app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+        android:layout_marginBottom="@dimen/_17sdp"
+        app:layout_constraintStart_toStartOf="@id/guidLineStart"
+        app:layout_constraintBottom_toBottomOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

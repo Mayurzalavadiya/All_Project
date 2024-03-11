@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_1sdp"
+    android:layout_marginVertical="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_3sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_9sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/path_32090" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTitleReading"
+            style="@style/TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias"
+            android:layout_marginStart="@dimen/_10sdp"
+            android:ellipsize="end"
+            android:text="@string/textview_cat"
+            app:layout_constraintBottom_toBottomOf="@id/imageview"
+            app:layout_constraintEnd_toStartOf="@id/textViewRecording"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/imageview"
+            app:layout_constraintTop_toTopOf="@id/imageview" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRecording"
+            style="@style/TextView.Regular.sp8.Purple.wrap"
+            android:layout_marginEnd="@dimen/_4sdp"
+            android:text="@string/textvew_record_reading"
+            android:textColor="@color/Purple"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/imageViewPlus"
+            app:layout_constraintStart_toEndOf="@id/textviewTitleReading"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewPlus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/_plus" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

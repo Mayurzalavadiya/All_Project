@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/icon_home"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/bottomMyCart"
+        android:icon="@drawable/cart_icon"
+        android:title="My Cart" />
+
+    <item
+        android:id="@+id/bottomMyAccount"
+        android:icon="@drawable/icon_myaccount"
+        android:title="My Account" />
+
+</menu>

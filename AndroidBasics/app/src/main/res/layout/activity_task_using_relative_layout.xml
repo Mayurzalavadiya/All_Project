@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button1"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/lightBlue"
+        android:text="@string/one" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button2"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightBlue"
+        android:text="@string/two" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button3"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_gravity="end"
+        android:background="@color/lightBlue"
+        android:text="@string/three" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button4"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_centerVertical="true"
+        android:background="@color/lightBlue"
+        android:text="@string/four" />
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_centerInParent="true">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button10"
+            style="@style/custom_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="@color/green"
+            android:text="@string/addition" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button11"
+            style="@style/custom_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentEnd="true"
+            android:background="@color/green"
+            android:text="@string/sub" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button12"
+            style="@style/custom_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/green"
+            android:text="@string/percentage" />
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button13"
+            style="@style/custom_button"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:background="@color/green"
+            android:text="@string/division" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button5"
+            style="@style/custom_button"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_centerInParent="true"
+            android:background="@color/red"
+            android:text="@string/five" />
+    </RelativeLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button6"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:background="@color/lightBlue"
+        android:text="@string/six" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button7"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBlue"
+        android:text="@string/seven" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button8"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:background="@color/lightBlue"
+        android:text="@string/eight" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button9"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:background="@color/lightBlue"
+        android:text="@string/nine" />
+
+
+</RelativeLayout>

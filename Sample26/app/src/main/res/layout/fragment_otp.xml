@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".fragment.OtpFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.085" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLogo"
+            android:layout_width="@dimen/_45sdp"
+            android:layout_height="@dimen/_45sdp"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop"
+            app:srcCompat="@drawable/group_40948" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTitle"
+            style="@style/textviewTitle"
+            android:layout_marginTop="@dimen/_27sdp"
+            android:text="@string/otp_verification"
+            android:textColor="@color/blue"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDescription"
+            style="@style/textviewDescription"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="@string/enter_the_otp_code_from_hlis_just_sent_you_at_480_555_0103"
+            android:textColor="@color/blue"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewTitle" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            style="@style/bgContainer"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:background="@drawable/bg_edittext"
+            android:padding="@dimen/_28sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewDescription">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp1"
+                style="@style/editTextOtp"
+                android:imeOptions="actionNext"
+                android:focusable="true"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp2"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp2"
+                style="@style/editTextOtp"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp3"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp1"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp3"
+                style="@style/editTextOtp"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp4"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp2"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp4"
+                style="@style/editTextOtp"
+                android:imeOptions="actionDone"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp3"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewExpire"
+                style="@style/textviewDescription"
+                android:layout_marginTop="@dimen/_26sdp"
+                android:text="@string/expired_in_00_22"
+                android:textColor="@color/gray"
+                android:enabled="false"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/editTextOtp1" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonVerify"
+                style="@style/bgButton"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:gravity="center"
+                android:text="@string/verify"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/textViewExpire" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewResendCode"
+                style="@style/textviewDescription"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:text="@string/resend_code"
+                android:textColor="@color/gray"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@+id/buttonVerify" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

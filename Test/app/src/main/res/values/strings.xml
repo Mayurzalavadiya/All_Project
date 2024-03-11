@@ -1,0 +1,51 @@
+<resources>
+    <string name="app_name">Test</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="my_post">My Post</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="login">Login</string>
+    <string name="validation_please_enter_an_email_address">Please enter email address</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter valid email address</string>
+    <string name="validation_please_enter_a_password">Please enter password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_please_enter_title">Please enter a title</string>
+    <string name="validation_please_enter_a_description">Please enter a description</string>
+    <string name="validation_please_enter_a_location">Please enter a location</string>
+    <string name="location">Location</string>
+    <string name="description">Description</string>
+    <string name="title">Title</string>
+    <string name="create">Create</string>
+    <string name="bruce_wayne22">Bruce Wayne22</string>
+    <string name="lorem_ipsum">Lorem ipsum</string>
+    <string name="lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_readmore">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry\'s standard Readmore</string>
+    <string name="_21_hour_ago">21 Hour Ago</string>
+    <string name="validation_please_select_image">Please select image</string>
+
+    <string name="edit">Edit</string>
+    <string name="share">Share</string>
+    <string name="update">Update</string>
+    <string name="delete">Delete\n</string>
+    <string name="test">Test</string>
+    <string name="task">Task</string>
+    <string name="w_bangkok_hotel_sha_plus">W Bangkok Hotel (SHA Plus+)</string>
+    <string name="_25_29_mar_2022">25 -29 Mar, 2022</string>
+    <string name="person">/Person</string>
+    <string name="add_ntravel_list">Add\nTravel list</string>
+    <string name="travel_title">Travel Title</string>
+    <string name="from_date">From Date</string>
+    <string name="_25_mar_2022">25 mar, 2022</string>
+    <string name="to_date">TO Date</string>
+    <string name="price_per_person">Price (Per Person)</string>
+    <string name="_15_550">$15,550</string>
+    <string name="add_item">Add Item</string>
+    <string name="travel_list">Travel List</string>
+    <string name="add">Add</string>
+    <string name="validation_please_enter_travel_title">please enter travel title</string>
+    <string name="validation_please_enter_date">please enter from date</string>
+    <string name="validation_please_enter_to_date">please enter to date</string>
+    <string name="validation_please_enter_a_price">please enter a price</string>
+    <string name="please_select_from_date_first">Please select \'From Date\' first.</string>
+</resources>

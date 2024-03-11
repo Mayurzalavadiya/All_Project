@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_8sdp"
+    android:background="@drawable/bg_white_10px"
+    android:padding="@dimen/_12sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewId"
+        style="@style/TextView.Regular.sp12.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/textview__6548651612"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDate"
+        style="@style/TextView.Bold.sp14.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:text="@string/textview__17_mar_2022_03_00_pm"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewId" />
+
+    <View
+        android:id="@+id/view"
+        style="@style/lineview15.padd10"
+        app:layout_constraintBottom_toTopOf="@id/textviewHotelName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewDate" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewHotelName"
+        style="@style/TextView.Bold.sp14.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/textview_paris_sand_hotel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textviewPoint"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewPoint"
+        style="@style/TextView.Bold.sp14.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/history_icon"
+        android:drawablePadding="@dimen/_5sdp"
+        android:text="@string/textview__100"
+        android:textColor="@color/Red"
+        android:maxLength="8"
+        app:layout_constraintBottom_toBottomOf="@id/textviewHotelName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textviewHotelName"
+        app:layout_constraintTop_toTopOf="@id/textviewHotelName" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

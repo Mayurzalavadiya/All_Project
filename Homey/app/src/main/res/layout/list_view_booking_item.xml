@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/_15sdp"
+    android:background="@drawable/bg_white_10px"
+    android:paddingHorizontal="@dimen/_11sdp"
+    android:paddingVertical="@dimen/_12sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewBookedOn"
+        style="@style/TextView.Regular.sp12.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Booked On"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDate"
+        style="@style/TextView.Bold.sp14.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="17 Mar, 2022 - 03:00 pm"
+        app:layout_constraintEnd_toStartOf="@id/textviewStatus"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewBookedOn" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewStatus"
+        style="@style/TextView.Regular.sp12"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_5px"
+        android:paddingHorizontal="@dimen/_6sdp"
+        android:paddingVertical="@dimen/_4sdp"
+        android:text="Completed"
+        android:textColor="@color/lightGreen"
+        app:layout_constraintBottom_toBottomOf="@id/textviewDate"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textviewDate"
+        app:layout_constraintTop_toTopOf="@id/textviewDate" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_colorprimary_10px"
+        android:padding="@dimen/_14sdp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewDate">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCheckIn"
+            style="@style/TextView.Regular.sp12.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check In"
+            app:layout_constraintEnd_toStartOf="@id/textViewCheckOut"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCheckOut"
+            style="@style/TextView.Regular.sp12.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Check Out"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toEndOf="@id/textViewCheckIn"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStartDate"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="17 Mar"
+            app:layout_constraintEnd_toStartOf="@id/textViewEndDate"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewCheckIn" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEndDate"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="22 Mar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/textViewStartDate"
+            app:layout_constraintTop_toBottomOf="@id/textViewCheckOut" />
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewLine"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:srcCompat="@drawable/dottedline_image"
+        android:layout_marginHorizontal="@dimen/_18sdp"
+        app:layout_constraintTop_toTopOf="@id/textviewNight"
+        app:layout_constraintBottom_toBottomOf="@id/textviewNight"
+        app:layout_constraintStart_toEndOf="@id/textViewStartDate"
+        app:layout_constraintEnd_toStartOf="@id/textViewEndDate"/>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewArrival"
+            style="@style/TextView.Regular.sp12.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:text="Arrival :10:00 am"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textViewStartDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewNight"
+            style="@style/TextView.SemiBold.sp13.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_white_5px"
+            android:paddingHorizontal="@dimen/_7sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:text="3 Night"
+            app:layout_constraintBottom_toTopOf="@id/textViewStartDate"
+            app:layout_constraintEnd_toStartOf="@id/textViewEndDate"
+            app:layout_constraintStart_toEndOf="@id/textViewStartDate"
+            app:layout_constraintTop_toTopOf="@+id/textViewStartDate" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewHotelName"
+        style="@style/TextView.Bold.sp16.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="@string/textview_sunrise_smart_hotel"
+        app:layout_constraintEnd_toStartOf="@id/textviewPrice"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewPrice"
+        style="@style/TextView.Bold.sp16.colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:text="$780"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textviewHotelName"
+        app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_5sdp"
+        android:adjustViewBounds="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewHotelName"
+        app:srcCompat="@drawable/location_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewLocation"
+        style="@style/TextView.Regular.sp13.Grey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="@string/textview_new_york_usa"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewLocation"
+        app:layout_constraintStart_toEndOf="@id/imageviewLocation"
+        app:layout_constraintTop_toTopOf="@id/imageviewLocation"
+        app:layout_constraintWidth_max="@dimen/_130sdp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

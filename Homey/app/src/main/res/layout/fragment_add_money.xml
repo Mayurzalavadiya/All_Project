@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/ColorBackground"
+    android:fillViewport="true"
+    tools:context=".ui.home.settings.fragment.AddMoneyFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTitle"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview_add_money_1"
+            app:layout_constraintBottom_toBottomOf="@id/imageviewBack"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/imageviewBack"
+            app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTotalAmount"
+            style="@style/TextView.Bold.sp34.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_38sdp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview__00_00"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTitle" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewAmount"
+            style="@style/TextView.Bold.sp14.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview_amount"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTotalAmount" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_29sdp"
+            android:background="@drawable/bg_white_10px"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+            android:paddingHorizontal="@dimen/_12sdp"
+            android:paddingVertical="@dimen/_17sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewAmount">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewDebitFrom"
+                style="@style/TextView.Bold.sp15.PrimaryBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_debit_from"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_18sdp"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/textviewDebitFrom"
+                tools:listitem="@layout/list_view_addmoney_item" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewAddNew"
+                style="@style/TextView.Bold.sp14"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_90sdp"
+                android:drawableStart="@drawable/plus_icon"
+                android:drawablePadding="@dimen/_10sdp"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_add_new"
+                android:textColor="@color/Orange"
+                app:layout_constraintBottom_toBottomOf="@id/constraint"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toBottomOf="@id/recyclerview" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAdd"
+            style="@style/Button.Regular.sp16.White.Background"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:stateListAnimator="@null"
+            android:text="@string/bbutton_add"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraint"
+            app:layout_constraintVertical_bias="1"
+            app:layout_goneMarginTop="@dimen/_20sdp" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint"
+    android:layout_width="wrap_content"
+    android:padding="3dp"
+    android:layout_height="wrap_content"
+>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewCircle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="3dp"
+        android:backgroundTint="@android:color/transparent"
+        app:srcCompat="@drawable/bg_border" />
+
+
+
+    <!--     <androidx.cardview.widget.CardView-->
+    <!--         android:id="@+id/cardview"-->
+    <!--         android:layout_width="0dp"-->
+    <!--         android:layout_height="0dp"-->
+    <!--         android:layout_margin="7dp"-->
+    <!--         app:cardCornerRadius="50dp"-->
+    <!--         app:cardElevation="0dp"-->
+    <!--         app:layout_constraintBottom_toBottomOf="@id/imageviewCircle"-->
+    <!--         app:layout_constraintEnd_toEndOf="@id/imageviewCircle"-->
+    <!--         app:layout_constraintStart_toStartOf="@id/imageviewCircle"-->
+    <!--         app:layout_constraintTop_toTopOf="@id/imageviewCircle">-->
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageview"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_margin="3dp"
+        android:adjustViewBounds="true"
+        android:background="@drawable/bg_circle"
+        app:layout_constraintBottom_toBottomOf="@id/imageviewCircle"
+        app:layout_constraintEnd_toEndOf="@id/imageviewCircle"
+        app:layout_constraintStart_toStartOf="@id/imageviewCircle"
+        app:layout_constraintTop_toTopOf="@id/imageviewCircle" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

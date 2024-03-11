@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.home.fragment.EditProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.03" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewBackArrow"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop"
+        app:srcCompat="@drawable/arrow_back_ios_black_24dp_1" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTitle"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintHorizontal_bias="0"
+        style="@style/TextView.SemiBold.sp16.DarkBlue"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:includeFontPadding="false"
+        android:text="@string/edit_profile"
+        app:layout_constraintStart_toEndOf="@id/imageViewBackArrow"
+        app:layout_constraintTop_toTopOf="@id/guidelineTop" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="@dimen/_62sdp"
+        android:layout_height="0dp"
+        app:layout_constraintDimensionRatio="1:1"
+        android:layout_marginTop="@dimen/_50sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCircular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/ellipse"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_4sdp"
+        android:layout_marginBottom="@dimen/_3sdp"
+        app:cardCornerRadius="@dimen/_50sdp"
+        app:layout_constraintBottom_toBottomOf="@id/cardView"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/cardView">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewEdit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/noun_edit_1072352"
+            android:scaleType="centerCrop" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewName"
+        style="@style/TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias"
+        android:layout_marginTop="@dimen/_35sdp"
+        android:text="@string/name"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/cardView" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextName"
+        style="@style/EditText.Medium.sp18.DarkBlue.Background"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:inputType="text"
+        android:text="@string/jack_royy"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewEmail"
+        style="@style/TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/email"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/edittextName" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextEmail"
+        style="@style/EditText.Medium.sp18.DarkBlue.Background"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:inputType="textEmailAddress"
+        android:text="@string/samplemail_gmail_com"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewEmail" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDateOfBirth"
+        style="@style/TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:text="@string/date_of_birth"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/edittextEmail" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextDateOfBirth"
+        style="@style/EditText.Medium.sp18.DarkBlue.Background"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:drawableEnd="@drawable/icon_awesome_calendar_day"
+        android:textColor="@color/Black"
+        android:paddingStart="@dimen/_15sdp"
+        android:paddingEnd="@dimen/_12sdp"
+        android:enabled="false"
+        android:text="@string/_13_12_2003"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/textViewDateOfBirth" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGetStart"
+        style="@style/Button.SemiBold.sp16.White.Radius_4sp"
+        android:layout_marginTop="@dimen/_28sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:text="@string/update"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@id/edittextDateOfBirth"
+        app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

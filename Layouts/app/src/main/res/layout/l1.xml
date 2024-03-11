@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="2dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_button"
+            android:paddingHorizontal="20dp"
+            tools:ignore="LabelFor"
+            android:src="@drawable/ic_home" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/scrollButton"
+            android:layout_marginStart="2dp"
+            android:text="@string/button_1"
+            android:textAllCaps="false" />
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="2dp"
+        android:layout_weight="1">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/one" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/two" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/three" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/four" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/five" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/six" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/seven" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/eight" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/nine" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/ten" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/eleven" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/twelve" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/thirteen" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/fourteen" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/fifteen" />
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/scrollButton"
+            android:layout_marginTop="2dp"
+            android:text="@string/button_2"
+            android:textAllCaps="false" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

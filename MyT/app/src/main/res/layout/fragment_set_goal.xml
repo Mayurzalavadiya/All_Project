@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.setGoal.fragment.SetGoalFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="@dimen/_16sdp"
+            app:srcCompat="@drawable/temp_logo" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toTopOf="@id/imageviewLogo"
+            app:srcCompat="@drawable/group_17684" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:background="@drawable/bg_profile"
+            android:fillViewport="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/imageview">
+
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineStart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guidelineEnd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewBackArrow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_13sdp"
+                app:layout_constraintEnd_toStartOf="@id/textviewGoal"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:srcCompat="@drawable/path_32073" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewGoal"
+                style="@style/TextView.SemiBold.sp16.DarkBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_12sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                android:ellipsize="end"
+                android:includeFontPadding="false"
+                android:text="@string/textview_set_your_goal"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewBackArrow"
+                app:layout_constraintEnd_toStartOf="@id/imageViewInfo"
+                app:layout_constraintStart_toEndOf="@id/imageViewBackArrow"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewInfo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_7sdp"
+                android:layout_marginTop="@dimen/_13sdp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toEndOf="@id/textviewGoal"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:srcCompat="@drawable/image_info" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDesGoal"
+                style="@style/TextView.Regular.sp14.LightBlack.ConstrainedWidth_Bias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_23sdp"
+                android:text="@string/textview_we_have_set_goal_for_you_you_can_customize_them_below"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@+id/textviewGoal" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewGoal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textViewDesGoal"
+                tools:listitem="@layout/goal_list_recycler_view" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_56sdp"
+                android:background="@color/colorView"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@id/recyclerviewGoal" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewReading"
+                style="@style/TextView.SemiBold.sp16.DarkBlue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                android:includeFontPadding="false"
+                android:text="@string/textview_record_your_readings"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@+id/view" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDesReading"
+                style="@style/TextView.Regular.sp14.LightBlack.ConstrainedWidth_Bias"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_8sdp"
+                android:text="@string/textview_let_us_track_these_important_vitas_for_your_connection_you_can_choose_more_vitals_to_track"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@+id/textviewReading" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerviewReading"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_16sdp"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@+id/textViewDesReading"
+                tools:listitem="@layout/reading_list_recycler_view" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmit"
+                style="@style/Button.SemiBold.sp16.White.Radius_4sp"
+                android:layout_marginTop="@dimen/_28sdp"
+                android:layout_marginBottom="@dimen/_16sdp"
+                android:text="@string/button_submit"
+                app:layout_constraintEnd_toEndOf="@id/guidelineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guidelineStart1"
+                app:layout_constraintTop_toBottomOf="@id/recyclerviewReading"
+                app:layout_constraintVertical_bias="1" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

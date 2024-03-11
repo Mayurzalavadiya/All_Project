@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.RelativeActivity">
+
+
+    <Button
+        android:id="@+id/TopLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Top Left"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TopLeft"
+        android:text="relation bottom" />
+
+    <RadioGroup
+        android:id="@+id/gender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/hello"
+        android:paddingLeft="10dp">
+
+        <RadioButton
+            android:id="@+id/gender_girl"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Girl" />
+
+        <RadioButton
+            android:id="@+id/gender_boy"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Boy" />
+
+        <RadioButton
+            android:id="@+id/gender_transgender"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="TransGender" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/Top_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:text="Top Right"
+        android:textAllCaps="false" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Top_Right"
+        android:layout_alignParentRight="true"
+        android:text="relation bottom" />
+
+    <Button
+        android:id="@+id/center"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginHorizontal="10dp"
+        android:layout_marginVertical="20dp"
+        android:text="Center"
+        android:textAllCaps="false" />
+    <!--        android:layout_centerHorizontal="true"-->
+    <!--        android:layout_centerVertical="true"-->
+    <!--        />-->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toStartOf="@+id/center"
+        android:text="relation to left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/center"
+        android:layout_alignLeft="@id/center"
+        android:layout_centerInParent="true"
+        android:text="relation to left" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_toEndOf="@id/center"
+        android:text="relation to right" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/center"
+        android:layout_alignRight="@id/center"
+        android:layout_centerInParent="true"
+        android:text="relation to right" />
+
+    <Button
+        android:id="@+id/Bottom_Left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#E8B80A"
+        android:text="Bottom Left"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/Bottom_Left"
+        android:text="relation align top"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/Bottom_Right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:backgroundTint="#E8B80A"
+        android:text="Bottom Right"
+        android:textAllCaps="false"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/Bottom_Right"
+        android:layout_alignParentRight="true"
+        android:text="relation align bottom"
+        android:textStyle="bold"></TextView>
+</RelativeLayout>

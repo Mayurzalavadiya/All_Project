@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.07" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.93" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDescription"
+        style="@style/textViewTitle"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/enter_the_4_digit_nverification_code_we_sent_nto_you"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/guidelineTop" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout"
+        style="@style/editText_bg"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:backgroundTint="@color/lightGray"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewDescription">
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextOtp1"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="1"
+            android:textColor="@color/bg_selector"
+            android:textSize="@dimen/_30ssp"
+            android:imeOptions="actionNext"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/view1"
+            app:layout_constraintHorizontal_chainStyle="spread"
+            app:layout_constraintStart_toStartOf="@id/constraintLayout"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <View
+            android:id="@+id/view1"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/darkGray"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/editTextOtp2"
+            app:layout_constraintStart_toEndOf="@id/editTextOtp1"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextOtp2"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:imeOptions="actionNext"
+            android:maxLength="1"
+            android:textColor="@color/bg_selector"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/view2"
+            app:layout_constraintStart_toEndOf="@id/view1"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/darkGray"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/editTextOtp3"
+            app:layout_constraintStart_toEndOf="@id/editTextOtp2"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextOtp3"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="1"
+            android:textColor="@color/bg_selector"
+            android:imeOptions="actionNext"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/view3"
+            app:layout_constraintStart_toEndOf="@id/view2"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="@dimen/_1sdp"
+            android:layout_height="0dp"
+            android:background="@color/darkGray"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toStartOf="@id/editTextOtp4"
+            app:layout_constraintStart_toEndOf="@id/editTextOtp3"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/editTextOtp4"
+            style="@style/editText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:maxLength="1"
+            android:textColor="@color/bg_selector"
+            android:textSize="@dimen/_30ssp"
+            app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+            app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+            app:layout_constraintStart_toEndOf="@id/view3"
+            app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonVerify"
+        style="@style/button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:text="@string/verify"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewResendCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_15sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:fontFamily="@font/sf_pro_text_regular"
+        android:gravity="center"
+        android:text="@string/resend_code_in"
+        android:textColor="@color/darkGray"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toStartOf="@id/textViewTime"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="@id/guidelineStart"
+        app:layout_constraintTop_toBottomOf="@+id/buttonVerify" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/sf_pro_text_bold"
+        android:gravity="center"
+        android:text="@string/_00_59"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_14ssp"
+        app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+        app:layout_constraintStart_toEndOf="@id/textViewResendCode"
+        app:layout_constraintTop_toTopOf="@+id/textViewResendCode" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#0E67F5</color>
+    <color name="lightGray">#C2BFBF</color>
+    <color name="bgEditText">#25314C</color>
+    <color name="editTextHint">#8F9091</color>
+    <color name="darkBlue">#182440</color>
+</resources>

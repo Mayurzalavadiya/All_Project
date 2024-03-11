@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.AllTaskActivity">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonListDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_list_demo"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStaggeredDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_staggered_demo"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonListDemo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonFlexDemo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_flex_demo"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonStaggeredDemo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonGridListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_gridview"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonFlexDemo" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStaggeredListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_staggered_view"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonGridListView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonLinearListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_linear_view"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonStaggeredListView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_add_to_cart"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonLinearListView" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonMultiSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_multiple_item_select"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonCart" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSingleSelect"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_single_item_select"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonMultiSelect" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonTask7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_task_7"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonSingleSelect" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonTask8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:backgroundTint="@android:color/darker_gray"
+        android:text="@string/button_task_8"
+        android:textAllCaps="false"
+        app:layout_constraintTop_toBottomOf="@id/buttonTask7" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

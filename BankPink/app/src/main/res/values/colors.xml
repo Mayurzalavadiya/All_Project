@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#161622</color>
+    <color name="colorPrimaryDark">#FFFFFF</color>
+    <color name="colorAccent">#1E1E2D</color>
+
+    <color name="White">#ffffff</color>
+    <color name="Blue">#0066FF</color>
+    <color name="Grey">#7E848D</color>
+    <color name="GreyLight">#A2A2A7</color>
+    <color name="ColorEdittext">#F4F4F4</color>
+    <color name="ColorBottomMenu">#8B8B94</color>
+    <color name="ColorMasterCard">#25253D</color>
+</resources>

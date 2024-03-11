@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.HomeActivity">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.04" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+        app:layout_constraintTop_toTopOf="@id/guideLineTop"
+        app:srcCompat="@drawable/ic_menu" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewCity"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:background="@drawable/bg_text_home"
+        android:drawableEnd="@drawable/ic_down"
+        android:drawablePadding="@dimen/_3sdp"
+        android:fontFamily="@font/sf_pro_text_medium"
+        android:gravity="center"
+        android:paddingStart="@dimen/_6sdp"
+        android:paddingEnd="@dimen/_5sdp"
+        android:text="@string/new_york_usa"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewMenu"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+        app:layout_constraintTop_toTopOf="@id/imageViewMenu" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+        app:layout_constraintTop_toTopOf="@id/guideLineTop"
+        app:srcCompat="@drawable/ellipse_13" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewNotification"
+        android:layout_width="@dimen/_20sdp"
+        android:layout_height="@dimen/_20sdp"
+        android:layout_marginEnd="@dimen/_10sdp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewProfile"
+        app:layout_constraintTop_toTopOf="@id/guideLineTop"
+        app:srcCompat="@drawable/ic_notification" />
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        android:paddingTop="@dimen/_27sdp"
+        app:layout_constraintBottom_toTopOf="@id/bottomNav"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+        app:layout_constraintTop_toBottomOf="@id/textViewCity">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineEnd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/container"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_125sdp"
+                android:background="@drawable/bg_container_home"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                android:padding="@dimen/_22sdp">
+
+                <androidx.appcompat.widget.AppCompatTextView
+                    android:id="@+id/textViewDiscount"
+                    android:layout_width="wrap_content"
+                    android:enabled="false"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/sf_pro_text_medium"
+                    android:text="@string/_30_discount_for_nfast_food"
+                    android:textColor="@color/white"
+                    android:textSize="@dimen/_16ssp"
+                    app:layout_constraintBottom_toBottomOf="@id/container"
+                    app:layout_constraintStart_toStartOf="@id/container"
+                    app:layout_constraintTop_toTopOf="@id/container"
+                    app:layout_constraintVertical_bias="0.4" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewLikeToEat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:fontFamily="@font/sf_pro_text_medium"
+                android:text="@string/what_would_you_like_to_eat"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/container" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/textViewSearch"
+                style="@style/editText"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:drawableStart="@drawable/ic_search"
+                android:hint="@string/search_for_dishes_restaurant"
+                android:inputType="text"
+                android:paddingStart="@dimen/_12sdp"
+                android:paddingTop="@dimen/_10sdp"
+                android:paddingEnd="@dimen/_4sdp"
+                android:lines="1"
+                android:imeOptions="actionDone"
+                android:paddingBottom="@dimen/_10sdp"
+                android:textColor="@color/gray"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@id/textViewLikeToEat" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="@dimen/_32sdp"
+                android:layout_height="@dimen/_32sdp"
+                android:layout_marginEnd="@dimen/_4sdp"
+                app:layout_constraintBottom_toBottomOf="@id/textViewSearch"
+                app:layout_constraintEnd_toEndOf="@id/textViewSearch"
+                app:layout_constraintTop_toTopOf="@id/textViewSearch"
+                app:srcCompat="@drawable/icon_search_home" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCategories"
+                style="@style/textviewDescription"
+                android:layout_marginTop="@dimen/_22sdp"
+                android:text="@string/categories"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toStartOf="@id/textViewViewAll"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@+id/textViewSearch" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewViewAll"
+                style="@style/editTextHint"
+                android:text="@string/view_all"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewCategories"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintStart_toEndOf="@id/textViewCategories"
+                app:layout_constraintTop_toTopOf="@+id/textViewCategories" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewCategory"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="0dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewCategories" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewNearbyRestaurants"
+                style="@style/textviewDescription"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:text="@string/nearby_restaurants"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart"
+                app:layout_constraintTop_toBottomOf="@+id/recyclerViewCategory" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewViewAllRestaurant"
+                style="@style/editTextHint"
+                android:text="@string/view_all"
+                android:textStyle="bold"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintBottom_toBottomOf="@+id/textViewNearbyRestaurants"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+                app:layout_constraintTop_toTopOf="@+id/textViewNearbyRestaurants" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewRestaurant"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:layout_marginBottom="@dimen/_5sdp"
+                android:paddingStart="@dimen/_8sdp"
+                android:paddingEnd="0dp"
+                android:scrollbars="none"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textViewNearbyRestaurants" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNav"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/white"
+        app:itemActiveIndicatorStyle="@style/App.Custom.Indicator"
+        app:itemIconTint="@drawable/selector"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/bottom_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>

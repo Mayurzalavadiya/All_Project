@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottomHome"
+        android:icon="@drawable/ic_baseline_settings_20px"
+        android:title="home" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottomShare"
+        android:icon="@drawable/ic_baseline_settings_20px"
+        android:title="my_card" />
+
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottomStatistics"
+        android:icon="@drawable/ic_baseline_settings_20px"
+        android:title="statistics" />
+    <item
+        app:showAsAction="always"
+        android:id="@+id/bottomSettings"
+        android:icon="@drawable/ic_baseline_settings_20px"
+        android:title="settings" />
+
+</menu>

@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activity.FrameLayoutActivity">
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@color/green"
+        android:text="@string/one"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green"
+        android:text="@string/two"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="end"
+        android:background="@color/green"
+        android:text="@string/three"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical"
+        android:background="@color/green"
+        android:text="@string/four"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="@string/one"
+        app:layout_constraintBottom_toTopOf="@id/buttonAdd"
+        app:layout_constraintEnd_toStartOf="@id/buttonAdd"
+        app:layout_constraintStart_toStartOf="@id/buttonAdd"
+        app:layout_constraintTop_toTopOf="@id/buttonAdd" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAdd"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:text="@string/addition"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintEnd_toStartOf="@id/button5"
+        app:layout_constraintStart_toStartOf="@id/button5"
+        app:layout_constraintTop_toTopOf="@id/button5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="@string/three"
+        app:layout_constraintBottom_toBottomOf="@id/buttonPercentage"
+        app:layout_constraintEnd_toStartOf="@id/buttonPercentage"
+        app:layout_constraintStart_toStartOf="@id/buttonPercentage"
+        app:layout_constraintTop_toBottomOf="@id/buttonPercentage" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPercentage"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:text="@string/percentage"
+        app:layout_constraintBottom_toBottomOf="@id/button5"
+        app:layout_constraintEnd_toStartOf="@id/button5"
+        app:layout_constraintStart_toStartOf="@id/button5"
+        app:layout_constraintTop_toBottomOf="@id/button5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="@string/two"
+        app:layout_constraintBottom_toTopOf="@id/buttonSub"
+        app:layout_constraintEnd_toEndOf="@id/buttonSub"
+        app:layout_constraintStart_toEndOf="@id/buttonSub"
+        app:layout_constraintTop_toTopOf="@id/buttonSub" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonSub"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:text="@string/sub"
+        app:layout_constraintBottom_toTopOf="@id/button5"
+        app:layout_constraintEnd_toEndOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button5"
+        app:layout_constraintTop_toTopOf="@id/button5" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/red"
+        android:text="@string/four"
+        app:layout_constraintBottom_toBottomOf="@id/buttonDiv"
+        app:layout_constraintEnd_toEndOf="@id/buttonDiv"
+        app:layout_constraintStart_toEndOf="@id/buttonDiv"
+        app:layout_constraintTop_toBottomOf="@id/buttonDiv" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonDiv"
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center"
+        android:background="@color/green"
+        android:text="@string/division"
+        app:layout_constraintBottom_toBottomOf="@id/button5"
+        app:layout_constraintEnd_toEndOf="@id/button5"
+        app:layout_constraintStart_toEndOf="@id/button5"
+        app:layout_constraintTop_toBottomOf="@id/button5" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/red"
+        android:text="@string/five"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="center_vertical|end"
+        android:background="@color/green"
+        android:text="@string/six"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:text="@string/seven"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/green"
+        android:text="@string/eight"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        style="@style/custom_button"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="bottom|end"
+        android:background="@color/green"
+        android:text="@string/nine"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

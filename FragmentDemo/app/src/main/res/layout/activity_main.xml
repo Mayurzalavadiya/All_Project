@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".mainActivity.MainActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonTask1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/task_1"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonTask2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/task_2"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonTask1" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonTask3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/task_3"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonTask2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/custom_viewpager"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonTask3" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonFragmentPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/fragment_viewpager"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonViewPager" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonFragmentStatePager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/fragmentstate_viewpager"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonFragmentPager" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPager2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/viewpager2"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonFragmentStatePager" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPager2Task"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/view_pager_task"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonViewPager2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPagerRecyclerTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/recycler_task_1"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonViewPager2Task" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPagerFragmentTask"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/viewpager_task_2"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonViewPagerRecyclerTask" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonViewPagerBothScroll"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:backgroundTint="@android:color/darker_gray"
+            android:text="@string/both_scroll_vertical_horizontal"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/buttonViewPagerFragmentTask" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

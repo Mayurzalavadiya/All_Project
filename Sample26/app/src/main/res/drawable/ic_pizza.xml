@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle">
+    <item android:drawable="@drawable/ellipse_14"/>
+    <item
+        android:top="@dimen/_5sdp"
+        android:bottom="@dimen/_5sdp"
+        android:start="@dimen/_5sdp"
+        android:end="@dimen/_10sdp"
+        android:drawable="@drawable/pizza_piece"/>
+
+</layer-list>

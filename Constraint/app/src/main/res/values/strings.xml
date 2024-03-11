@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Constraint</string>
+
+    <string name="button">Alert Button</string>
+    <string name="dialogTitle">Delete File</string>
+    <string name="dialogMessage">Are you sure</string>
+
+
+    <string name="action_settings">Circle</string>
+    <string name="action_share">Constraint</string>
+    <string name="action_exit">Exit</string>
+
+</resources>
