@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_product_list_view"
+    android:padding="@dimen/_8sdp">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_130sdp"
+        app:cardCornerRadius="@dimen/_9sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toTopOf="@id/constraint">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewImage"
+            style="@style/Circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:background="@drawable/pexels_photo"
+            android:clickable="false"
+            app:layout_constraintDimensionRatio="1" />
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewName"
+        style="@style/textViewProductList"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/w_bangkok_hotel_sha_plus"
+        android:textColor="@color/dark"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintStart_toStartOf="@id/constraint"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage" />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/ratingBar"
+        style="@android:style/Widget.DeviceDefault.RatingBar.Small"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:numStars="5"
+        android:progressTint="@color/yellow"
+        android:rating="4"
+        android:stepSize="0.1"
+        app:layout_constraintStart_toStartOf="@id/constraint"
+        app:layout_constraintTop_toBottomOf="@id/textViewName" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_1sdp"
+        android:layout_marginTop="@dimen/_11sdp"
+        android:background="@color/listViewColor"
+        app:layout_constraintTop_toBottomOf="@id/ratingBar" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDateTime"
+        android:layout_width="@dimen/_18sdp"
+        android:layout_height="0dp"
+        android:layout_marginTop="@dimen/_11sdp"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="@id/constraint"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        app:srcCompat="@drawable/frame_time_date" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewLocation"
+        style="@style/textViewLightProductList"
+        android:layout_marginStart="@dimen/_3sdp"
+        android:includeFontPadding="false"
+        android:text="@string/_25_29_mar_2022"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDateTime"
+        app:layout_constraintStart_toEndOf="@id/imageViewDateTime"
+        app:layout_constraintTop_toTopOf="@id/imageViewDateTime" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPrice"
+        style="@style/textViewPriceProductList"
+        android:includeFontPadding="false"
+        android:text="@string/_15_550"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDateTime"
+        app:layout_constraintEnd_toStartOf="@id/textViewPerson"
+        app:layout_constraintTop_toTopOf="@id/imageViewDateTime" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPerson"
+        style="@style/textViewLightProductList"
+        android:includeFontPadding="false"
+        android:text="@string/person"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewDateTime"
+        app:layout_constraintEnd_toEndOf="@id/constraint"
+        app:layout_constraintTop_toTopOf="@id/imageViewDateTime" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

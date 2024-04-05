@@ -1,0 +1,56 @@
+
+d
+java:S1604Z"(Make this anonymous inner class a lambda(îß’ÕJ$a1dc2372-020b-4fae-8a6f-5106f4314821
+d
+java:S1604a"(Make this anonymous inner class a lambda(ÖÜˆìJ$80650776-e70e-4c47-baa1-6cc73ae634f5
+d
+java:S1604j"(Make this anonymous inner class a lambda(ÓŒÖŒJ$c5ee38ad-f33a-473c-b167-8dd3b9423efc
+i
+java:S1604t"(Make this anonymous inner class a lambda(âéûåıÿÿÿÿJ$9d95fb47-e0db-4afa-a23e-49f2c3bacc90
+l
+java:S1604š"(Make this anonymous inner class a lambda(ìë¤²8è×Åäã1J$52a5211f-654b-46a5-a637-9ebcf0615f5a
+’	java:S116+"WRename this field "CONTACT_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í§ÜJ$d0329aeb-bab3-48ce-a5bc-29a38acd9a50
+’
+java:S1874G"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8’İÅäã1J$92716749-d8b6-429f-8e2c-f61d77686fff
+“
+java:S3776G"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ó»×¶şÿÿÿÿJ$dd31f6c6-acab-49d5-8cec-98c522c335a5
+y
+java:S1854V">Remove this useless assignment to local variable "permResult".(†¾ÈJ$91d9aa2e-5339-4a06-80a9-b6f7e37b97af
+j
+java:S1481V"/Remove this unused "permResult" local variable.(†¾ÈJ$8b4e9c93-29a1-4d28-a044-692ba5b70b06
+›
+java:S3252"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8ŸŞÅäã1J$586fc8f9-ce88-4d41-95d1-d2dea64173c7
+›
+java:S3252"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(¥êêí8¡ŞÅäã1J$75fc5cfd-04f2-4b86-a26b-cd9d6b710504
+t
+java:S1135"2Complete the task associated to this TODO comment.(áÃæùÿÿÿÿJ$b3e182bc-8126-42ac-9400-65aae54a424a
+{
+java:S1854º"9Remove this useless assignment to local variable "sCity".(á¨—ÏşÿÿÿÿJ$d273bf14-2e09-4fd3-a929-7c9b1598d19a
+~
+java:S1854»"<Remove this useless assignment to local variable "sSubCity".(æ¸Ø×úÿÿÿÿJ$719dd382-6195-4e89-a28c-ba2eba312e7e
+|
+java:S1854¼":Remove this useless assignment to local variable "sState".(¾ŒöõşÿÿÿÿJ$f1cdad97-4332-444a-b0d1-1dc1349022b7
+}
+java:S1854½"@Remove this useless assignment to local variable "sCountryCode".(ßò®ÒJ$1a524455-be7b-4de2-8a4c-0478ee5d79c8
+x
+java:S1854¾"<Remove this useless assignment to local variable "sCountry".(öæÓpJ$a6a36487-71da-4928-92ba-d23f39f7e161
+z
+java:S1854¿"=Remove this useless assignment to local variable "sPostCode".(‰¹‘J$1f23efb7-fc94-4734-a643-86f3655feb84
+{
+java:S1854À">Remove this useless assignment to local variable "sKnownName".(ó Œ¡J$68702236-66df-47c7-b57b-1fc53e79a7a0
+{
+java:S1155µ">Use isEmpty() to check whether the collection is empty or not.(êÍØşJ$55c799f4-683c-456b-922f-e47984d4ea4f
+l
+java:S1481º"*Remove this unused "sCity" local variable.(á¨—ÏşÿÿÿÿJ$083903c3-21b7-4001-8de7-ba86d2c69de3
+o
+java:S1481»"-Remove this unused "sSubCity" local variable.(æ¸Ø×úÿÿÿÿJ$3ac65f39-c927-483e-b563-466c7343f333
+m
+java:S1481¼"+Remove this unused "sState" local variable.(¾ŒöõşÿÿÿÿJ$368316ff-e810-4a4e-8213-92e3decc74f3
+n
+java:S1481½"1Remove this unused "sCountryCode" local variable.(ßò®ÒJ$0fd4128d-3120-4ac5-b7af-472ce7c14b1f
+i
+java:S1481¾"-Remove this unused "sCountry" local variable.(öæÓpJ$1fccb3c6-2be4-468c-bb45-8be43f7f1641
+k
+java:S1481¿".Remove this unused "sPostCode" local variable.(‰¹‘J$15e0d8d6-cfd2-4cf2-bb49-dbb7439d3ad8
+l
+java:S1481À"/Remove this unused "sKnownName" local variable.(ó Œ¡J$94ca47a0-4042-49ec-b297-5cd6d3023387

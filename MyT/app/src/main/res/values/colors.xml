@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+
+
+    <color name="white">#FFF</color>
+    <color name="Black">#FF000000</color>
+    <color name="black50p">#80000000</color>
+    <color name="Green">#1BBB33</color>
+
+
+    <color name="DarkBlack">#313131</color>
+    <color name="LightBlack">#616161</color>
+    <color name="DarkBlack1">#212121</color>
+    <color name="Purple">#760FB2</color>
+    <color name="DarkGrey">#919191</color>
+    <color name="PurpleDark">#230435</color>
+    <color name="lightGrey">#9E9E9E</color>
+    <color name="DarkBlue">#1B053C</color>
+
+
+    //profile
+    <color name="profileBg">#45E9E9E9</color>
+    <color name="profileBorder">#D1D1D1</color>
+    <color name="editProfileBorder">#D2D4D7</color>
+    <color name="PurpleLight">#7B3AA1</color>
+
+    //goal and reading
+    <color name="colorGoalBorder">#D9D9D9</color>
+    <color name="colorView">#C1C1C1</color>
+    <color name="GreyText">#B5B5B5</color>
+    <color name="GreyBorder">#E3E3E3</color>
+
+</resources>

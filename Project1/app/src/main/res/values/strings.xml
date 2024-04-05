@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Project1</string>
+
+    <string name="log_in">Log In</string>
+    <string name="back">Back</string>
+    <string name="type_here">Type here…</string>
+    <string name="password">Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="email_or_phone_number">Email or Phone number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="name_or_pseudo">Name or pseudo</string>
+    <string name="data_me">Data Me.</string>
+    <string name="we_deliver_water_at_any_point_of_the_earth_in_30_minutes">We deliver water at any point of the Earth in 30 minutes</string>
+
+
+    //Validation
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_an_email_address">Please enter an email address</string>
+    <string name="please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="please_enter_a_password">Please enter a password</string>
+    <string name="password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="please_enter_a_confirm_password">Please enter a confirm password</string>
+    <string name="password_mitch_match">Password mitch match</string>
+    <string name="signup_successfully">Signup Successfully</string>
+    <string name="login_successfully">Login Successfully</string>
+    <string name="know_yourself_better">Know yourself better</string>
+
+</resources>

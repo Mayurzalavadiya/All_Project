@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Task3</string>
+
+
+    //Validation
+    <string name="validation_please_enter_an_email_address">Please enter an email address</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="validation_please_enter_a_password">Please enter a password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_sign_in_successfully">SignIn Successfully</string>
+    <string name="validation_please_enter_a_confirm_password">Please enter a confirm password</string>
+    <string name="validation_password_mitch_match">Password mitch match</string>
+
+    <string name="discover_your_dream_job_here">Discover Your\nDream Job here</string>
+    <string name="explore_all_the_existing_job_roles_based_on_your_interest_and_study_major">Explore all the existing job roles based on your\ninterest and study major</string>
+    <string name="login">Login</string>
+    <string name="register">Register</string>
+    <string name="login_here">Login here</string>
+    <string name="welcome_back_you_ve_been_missed">Welcome back you’ve\nbeen missed!</string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="forgot_your_password">Forgot your password?</string>
+    <string name="create_new_account">Create new account</string>
+    <string name="or_continue_with">Or continue with</string>
+    <string name="sign_in">Sign in</string>
+    <string name="create_account">Create Account</string>
+    <string name="create_an_account_so_you_can_explore_all_the_existing_jobs">Create an account so you can explore all the\nexisting jobs</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign up</string>
+    <string name="already_have_an_account">Already have an account</string>
+    <string name="default_web_client_id">616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com</string>
+
+</resources>

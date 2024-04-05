@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/dark"
+    android:paddingVertical="@dimen/_10sdp">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewProfile"
+        android:layout_width="@dimen/_33sdp"
+        android:layout_height="0dp"
+        android:background="@drawable/group_55"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewUserName"
+        style="@style/textViewList"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="@string/bruce_wayne22"
+        android:textSize="@dimen/_14ssp"
+        android:textStyle="bold"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/textViewTime"
+        app:layout_constraintEnd_toStartOf="@id/imageViewMenu"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toEndOf="@id/imageViewProfile"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfile"
+        app:layout_constraintVertical_chainStyle="spread_inside" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTime"
+        style="@style/textViewList"
+        android:text="@string/_21_hour_ago"
+        android:textColor="@color/Pink"
+        android:textSize="@dimen/_10ssp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewProfile"
+        app:layout_constraintStart_toStartOf="@+id/textViewUserName"
+        app:layout_constraintTop_toBottomOf="@id/textViewUserName"
+        app:layout_goneMarginStart="@dimen/_5sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewMenu"
+        style="@style/icon"
+        android:layout_marginTop="@dimen/_1sdp"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewProfile"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/imageViewProfile"
+        app:srcCompat="@drawable/baseline_more_vert_24" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewImage"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@color/dark"
+        app:cardCornerRadius="@dimen/_9sdp"
+        app:cardElevation="0dp"
+        app:layout_constraintTop_toBottomOf="@id/imageViewProfile">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewImage"
+            style="@style/Circular"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/rectangle_24"
+            android:scaleType="centerCrop"
+            app:layout_constraintDimensionRatio="1" />
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewLike"
+        style="@style/icon"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+        app:srcCompat="@drawable/baseline_favorite_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewComments"
+        style="@style/icon"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/imageViewLike"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+        app:srcCompat="@drawable/baseline_message_24" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewShare"
+        style="@style/icon"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:scaleType="fitXY"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintStart_toEndOf="@id/imageViewComments"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+        app:srcCompat="@drawable/share" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewSave"
+        style="@style/icon"
+        app:layout_constraintDimensionRatio="1:1"
+        app:layout_constraintEnd_toEndOf="@id/cardViewImage"
+        app:layout_constraintTop_toBottomOf="@id/cardViewImage"
+        app:srcCompat="@drawable/outline_bookmark_24" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTitle"
+        style="@style/textViewList"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:text="@string/bruce_wayne22"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLike" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewLocation"
+        style="@style/textViewList"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/lorem_ipsum"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDes"
+        style="@style/textViewList"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:text="@string/lorem_ipsum_is_simply_dummy_text_of_the_printing_and_typesetting_industry_lorem_ipsum_has_been_the_industry_s_standard_readmore"
+        android:textSize="@dimen/_12ssp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewLocation" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACTIVITY_RECOGNITION" />
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
+
+    <application
+        android:allowBackup="true"
+        android:name=".workManager.MyApp"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Services"
+        tools:targetApi="31">
+        <activity
+            android:name=".mediaPlayerService.activity.MediaServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".workManager.activity.WorkManagerActivity"
+            android:windowSoftInputMode="adjustResize"
+            android:exported="false" />
+        <activity
+            android:name=".stopWatch.activity.StopWatchActivity"
+            android:exported="false" />
+        <activity
+            android:name=".stepCounter.activity.StepCountActivity"
+            android:exported="false" />
+        <activity
+            android:name=".pushNotification.activity.NotificationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".boundService.activity.ActivityB"
+            android:exported="false" />
+        <activity
+            android:name=".boundService.activity.ActivityA"
+            android:exported="false" />
+        <activity
+            android:name=".foregroundService.activity.ForeGroundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".backgroundService.activity.BackGroundActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".backgroundService.service.BackgroundService"
+            android:exported="false" />
+        <service
+            android:name=".foregroundService.service.ForegroundService"
+            android:exported="false" />
+        <service
+            android:name=".boundService.service.BoundService"
+            android:exported="false" />
+        <service
+            android:name=".pushNotification.services.ProgressService"
+            android:exported="false" />
+        <service
+            android:name=".stopWatch.service.StopwatchService"
+            android:exported="false" />
+        <service
+            android:name=".stepCounter.service.StepCounterService"
+            android:exported="false" />
+        <service
+            android:name=".mediaPlayerService.service.NewService"
+            android:exported="false" />
+
+        <receiver android:name=".pushNotification.services.MyReceiver"/>
+    </application>
+
+</manifest>

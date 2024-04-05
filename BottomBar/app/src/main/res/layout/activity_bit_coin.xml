@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.bitcoin.activity.BitCoinActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewBitcoin"
+            style="@style/textView.wrap.rate.black.title"
+            android:text="@string/bitcoin"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewUpdatedAt"
+            style="@style/textView.wrap.rate.black"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:text="@string/updated_at"
+            app:layout_constraintEnd_toStartOf="@id/textViewUpdatedDateTime"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewBitcoin"
+            app:layout_constraintWidth_max="@dimen/_120sdp" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewUpdatedDateTime"
+            style="@style/textView.wrap.rate.grey"
+            android:layout_marginStart="@dimen/_10sdp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewUpdatedAt"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@id/textViewUpdatedAt"
+            app:layout_constraintTop_toTopOf="@id/textViewUpdatedAt"
+            app:layout_constraintWidth_max="@dimen/_170sdp" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintUsd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:background="@drawable/bg_item"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewUpdatedAt">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewUsd"
+                style="@style/textView.wrap.rate.name"
+                android:text="@string/usd"
+                app:layout_constraintBottom_toTopOf="@id/textViewUsdDescription"
+                app:layout_constraintEnd_toStartOf="@+id/textViewUsdRate"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintUsd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewUsdDescription"
+                style="@style/textView.wrap.rate.description"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintUsd"
+                app:layout_constraintEnd_toStartOf="@+id/textViewDifferent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewUsd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewUsdRate"
+                style="@style/textView.wrap.rate"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/_0"
+                app:layout_constraintEnd_toEndOf="@id/constraintUsd"
+                app:layout_constraintStart_toEndOf="@id/textviewUsd"
+                app:layout_constraintTop_toTopOf="@id/constraintUsd" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewDifferent"
+                style="@style/textView.wrap.rate.different"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="@string/_0"
+                app:layout_constraintEnd_toEndOf="@id/constraintUsd"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/textViewUsdDescription"
+                app:layout_constraintTop_toBottomOf="@id/textViewUsdRate"
+                app:layout_constraintWidth_max="@dimen/_170sdp" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintGBP"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_item"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintUsd">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewGBP"
+                style="@style/textView.wrap.rate.name"
+                android:text="@string/gbp"
+                app:layout_constraintBottom_toTopOf="@id/textViewGBPDescription"
+                app:layout_constraintEnd_toStartOf="@+id/textViewGBPRate"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintGBP" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewGBPDescription"
+                style="@style/textView.wrap.rate.description"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:minWidth="@dimen/_100sdp"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintBottom_toBottomOf="@id/constraintGBP"
+                app:layout_constraintEnd_toStartOf="@+id/textViewGBPDifferent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewGBP" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewGBPRate"
+                style="@style/textView.wrap.rate"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/_0"
+                app:layout_constrainedWidth="true"
+                app:layout_constraintEnd_toEndOf="@id/constraintGBP"
+                app:layout_constraintStart_toEndOf="@id/textviewGBP"
+                app:layout_constraintTop_toTopOf="@id/constraintGBP" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewGBPDifferent"
+                style="@style/textView.wrap.rate.different"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="@string/_0"
+                app:layout_constraintEnd_toEndOf="@id/constraintGBP"
+                app:layout_constraintWidth_max="@dimen/_170sdp"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/textViewGBPDescription"
+                app:layout_constraintTop_toBottomOf="@id/textViewGBPRate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintEUR"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_item"
+            android:paddingHorizontal="@dimen/_15sdp"
+            android:paddingVertical="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintGBP">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewEUR"
+                style="@style/textView.wrap.rate.name"
+                android:text="@string/eur"
+                app:layout_constraintBottom_toTopOf="@id/textViewEURDescription"
+                app:layout_constraintEnd_toStartOf="@+id/textViewEURRate"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/constraintEUR" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEURDescription"
+                style="@style/textView.wrap.rate.description"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintHorizontal_chainStyle="spread_inside"
+                app:layout_constraintBottom_toBottomOf="@id/constraintEUR"
+                app:layout_constraintEnd_toStartOf="@+id/textViewEURDifferent"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewEUR" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEURRate"
+                style="@style/textView.wrap.rate"
+                android:layout_marginStart="@dimen/_15sdp"
+                android:text="@string/_0"
+                app:layout_constraintEnd_toEndOf="@id/constraintEUR"
+                app:layout_constraintStart_toEndOf="@id/textviewEUR"
+                app:layout_constraintTop_toTopOf="@id/constraintEUR" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEURDifferent"
+                style="@style/textView.wrap.rate.different"
+                android:layout_marginTop="@dimen/_3sdp"
+                android:text="@string/_0"
+                app:layout_constraintWidth_max="@dimen/_170sdp"
+                app:layout_constraintEnd_toEndOf="@id/constraintEUR"
+                app:layout_constraintHorizontal_bias="1"
+                app:layout_constraintStart_toEndOf="@id/textViewEURDescription"
+                app:layout_constraintTop_toBottomOf="@id/textViewEURRate" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+<!--        <androidx.appcompat.widget.AppCompatButton-->
+<!--            android:id="@+id/buttonFetch"-->
+<!--            style="@style/button"-->
+<!--            android:layout_marginTop="@dimen/_20sdp"-->
+<!--            android:layout_marginBottom="@dimen/_20sdp"-->
+<!--            android:text="@string/fetch_data"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideLineStart"-->
+<!--            app:layout_constraintTop_toBottomOf="@id/constraintEUR"-->
+<!--            app:layout_constraintVertical_bias="1" />-->
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    tools:context=".ui.auth.fragment.AccountTypeFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:padding="@dimen/_3sdp"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/back_arrow_icon" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewAccountType"
+        style="@style/TextView.Bold.sp22.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_32sdp"
+        android:text="@string/textview_account_type"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/imageviewBack" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDescription"
+        style="@style/TextView.Regular.sp14.Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_6sdp"
+        android:text="@string/textview_decide_what_kind_of_account_nyou_want"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewAccountType" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintCustomer"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:layout_marginEnd="@dimen/_14sdp"
+        android:background="@drawable/bg_colorprimary_10px"
+        app:layout_constraintEnd_toStartOf="@id/constraintHotel"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewDescription">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewCheck"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/imageviewCustomer"
+            app:layout_constraintEnd_toEndOf="@id/constraintCustomer"
+            app:layout_constraintTop_toTopOf="@id/constraintCustomer"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/selected_circle_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewCustomer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            app:layout_constraintBottom_toTopOf="@id/textviewCustomer"
+            app:layout_constraintEnd_toEndOf="@id/constraintCustomer"
+            app:layout_constraintStart_toStartOf="@id/constraintCustomer"
+            app:layout_constraintTop_toBottomOf="@+id/imageviewCheck"
+            app:srcCompat="@drawable/selected_person_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewCustomer"
+            style="@style/TextView.Bold.sp18.SelcterEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:enabled="true"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:text="@string/textview_customer"
+            app:layout_constraintBottom_toBottomOf="@id/constraintCustomer"
+            app:layout_constraintEnd_toEndOf="@id/constraintCustomer"
+            app:layout_constraintStart_toStartOf="@id/constraintCustomer"
+            app:layout_constraintTop_toBottomOf="@id/imageviewCustomer" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintHotel"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:background="@drawable/bg_gray40per_10px"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/constraintCustomer"
+        app:layout_constraintTop_toBottomOf="@id/textviewDescription">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewCheckHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_8sdp"
+            app:layout_constraintBottom_toTopOf="@id/imageviewHotel"
+            app:layout_constraintEnd_toEndOf="@id/constraintHotel"
+            app:layout_constraintTop_toTopOf="@id/constraintHotel"
+            app:layout_constraintVertical_chainStyle="packed"
+            app:srcCompat="@drawable/unselected_circle_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewHotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            app:layout_constraintBottom_toTopOf="@id/textviewHotel"
+            app:layout_constraintEnd_toEndOf="@id/constraintHotel"
+            app:layout_constraintStart_toStartOf="@id/constraintHotel"
+            app:layout_constraintTop_toBottomOf="@+id/imageviewCheckHotel"
+            app:srcCompat="@drawable/unselected_hotel_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewHotel"
+            style="@style/TextView.Bold.sp18.SelcterEnable"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:enabled="false"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:text="@string/textview_hotel_nowner"
+            android:textAlignment="center"
+            app:layout_constraintBottom_toBottomOf="@id/constraintHotel"
+            app:layout_constraintEnd_toEndOf="@id/constraintHotel"
+            app:layout_constraintStart_toStartOf="@id/constraintHotel"
+            app:layout_constraintTop_toBottomOf="@id/imageviewHotel" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonNext"
+        style="@style/Button.Regular.sp16.White.Background"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:elevation="0dp"
+        android:stateListAnimator="@null"
+        android:text="@string/button_next"
+        android:translationZ="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@+id/constraintCustomer"
+        app:layout_constraintVertical_bias="1" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

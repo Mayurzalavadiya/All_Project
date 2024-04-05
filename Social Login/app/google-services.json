@@ -1,0 +1,114 @@
+{
+  "project_info": {
+    "project_number": "616589177313",
+    "firebase_url": "https://whatapp-d7998-default-rtdb.firebaseio.com",
+    "project_id": "whatapp-d7998",
+    "storage_bucket": "whatapp-d7998.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616589177313:android:d7f4d59bb4261de02a62a0",
+        "android_client_info": {
+          "package_name": "com.starter.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNmGWS1Xg3zfP9sQoO5anIdxJb100fvII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616589177313:android:b456f0ce085bf7a12a62a0",
+        "android_client_info": {
+          "package_name": "com.task3"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616589177313-eboqtbjkth2q02s7fbq78kp0pubh72r5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.task3",
+            "certificate_hash": "0a55e1579ebc4d9580832c1660509f72e1fd2eec"
+          }
+        },
+        {
+          "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNmGWS1Xg3zfP9sQoO5anIdxJb100fvII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:616589177313:android:54c0d92c7800f2902a62a0",
+        "android_client_info": {
+          "package_name": "myapplicationdj.example.whatapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "616589177313-34ct6to06l21a69kup9463v4qimnvvnh.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "myapplicationdj.example.whatapp",
+            "certificate_hash": "a1a672ad378b735d481a0c281d5a5a7f1eaf1010"
+          }
+        },
+        {
+          "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBNmGWS1Xg3zfP9sQoO5anIdxJb100fvII"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "616589177313-nf7jc89kdv1bpu9ds6ld19vomedi0si7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

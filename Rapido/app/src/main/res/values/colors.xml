@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#1D293F</color>
+    <color name="colorPrimaryDark">#22263D</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorGradientStart">#F1FCFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="Black">#000000</color>
+
+    <color name="Grey">#9A9CAD</color>
+
+    <color name="Grey8pe">#149A9CAD</color>
+    <color name="LightSky">#89D0F0</color>
+    <color name="LightGrey">#E4E5E8</color>
+
+    <color name="GreyLight">#1F9A9CAD</color>
+    <color name="GreyLightBorder">#1F9CAD1F</color>
+
+    <color name="GreyLight2">#9FA2AA</color>
+    <color name="LightBlack">#0A0A0A</color>
+    <color name="ColorInterestList">#DADADA</color>
+    <color name="ColorBackground">#1D293F</color>
+
+</resources>

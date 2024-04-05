@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/constraint"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingStart="@dimen/_8sdp"
+    android:paddingTop="@dimen/_15sdp"
+    android:paddingEnd="@dimen/_12sdp"
+    android:paddingBottom="@dimen/_14sdp">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewCategory"
+        style="@style/TextView.Regular.sp12.Grey.Background"
+        android:background="@drawable/bg_border_lightsky"
+        android:clickable="false"
+        android:elevation="0dp"
+        android:text="@string/button_view"
+        android:textColor="@color/colorPrimaryDark"
+        android:translationZ="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewAddress"
+        style="@style/TextView.Regular.sp16.colorPrimaryDark"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_6sdp"
+        android:layout_marginTop="@dimen/_4sdp"
+        android:text="2582 Marshall Street Baltimore,\nMD 21202 "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewCategory" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDefault"
+        style="@style/TextView.Regular.sp12.Grey.Background"
+        android:layout_marginTop="@dimen/_9sdp"
+        android:background="@drawable/bg_button_view_password"
+        android:text="@string/button_default"
+        android:textColor="@color/colorPrimaryDark"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewAddress" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/imageviewEdit"
+        app:layout_constraintTop_toTopOf="@+id/textviewDefault"
+        app:srcCompat="@drawable/icon_delete" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageviewEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/imageviewDelete"
+        app:srcCompat="@drawable/edit" />
+</androidx.constraintlayout.widget.ConstraintLayout>

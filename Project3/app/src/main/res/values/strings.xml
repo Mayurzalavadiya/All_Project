@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Project3</string>
+
+    <string name="wwater">wwater</string>
+    <string name="water_delivery">Water delivery</string>
+    <string name="we_deliver_water_at_any_point_of_the_earth_in_30_minutes">We deliver water at any point of the Earth in 30 minutes</string>
+    <string name="log_in">Log in</string>
+    <string name="sign_up">Sign up</string>
+    <string name="email">Email</string>
+    <string name="welcome_nback">Welcome\nBack</string>
+    <string name="create_naccount">Create\nAccount</string>
+    <string name="password">Password</string>
+    <string name="or">or</string>
+    <string name="name">Name</string>
+    <string name="forgot_password">Forgot password</string>
+
+
+    //Validation
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_an_email_address">Please enter an email address</string>
+    <string name="please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="please_enter_a_password">Please enter a password</string>
+    <string name="password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="signup_successfully">Signup Successfully</string>
+    <string name="login_successfully">Login Successfully</string>
+
+</resources>

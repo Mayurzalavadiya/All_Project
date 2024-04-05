@@ -1,0 +1,304 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="@dimen/_3sdp"
+    android:translationZ="@dimen/_3sdp"
+    app:cardCornerRadius="@dimen/_15ssp"
+    app:cardElevation="0dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/_12sdp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/ImageViewImage"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            app:layout_constraintDimensionRatio="2:1.2"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/images_6" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_heart" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewOpen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_green"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_2sdp"
+            android:text="Open"
+            android:textColor="@color/white"
+            android:textSize="@dimen/_8ssp"
+            app:layout_constraintBottom_toTopOf="@+id/constraint"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewItemName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewItemName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_8sdp"
+            android:background="@drawable/bg_green"
+            android:backgroundTint="@color/white"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:text="Delivery Coast: $10"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_10ssp"
+            app:layout_constraintBottom_toTopOf="@id/constraint"
+            app:layout_constraintEnd_toEndOf="@id/guidLineEnd" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:background="@drawable/bg_green"
+            android:backgroundTint="@color/white"
+            android:elevation="@dimen/_3sdp"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            android:translationZ="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@id/ImageViewImage"
+            app:layout_constraintEnd_toEndOf="@id/guidLineEnd"
+            app:layout_constraintTop_toBottomOf="@id/ImageViewImage">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:srcCompat="@drawable/ic_star" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="4.0"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@id/constraint"
+                app:layout_constraintStart_toEndOf="@id/imageViewStart"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_3sdp"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="Thaitanic Restaurant"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15ssp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@id/ImageViewImage" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:tint="#A7A7A7"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewName"
+            app:srcCompat="@drawable/ic_location" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewLocation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:lineSpacingExtra="@dimen/_2sdp"
+            android:text="3354 post Avenue Brainerd, MN 56401"
+            android:textColor="#A7A7A7"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewLocation"
+            app:layout_constraintStart_toEndOf="@id/imageViewLocation"
+            app:layout_constraintTop_toTopOf="@id/imageViewLocation" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantsName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:text="Chinese"
+            android:textColor="#133956"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@id/imageViewLocation" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCircle1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/bg_circle"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/textViewRestaurantsName"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantsName2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Japanese"
+            android:textColor="#133956"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/imageViewCircle1"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCircle2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/bg_circle"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/textViewRestaurantsName2"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantsName3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="Italian"
+            android:textColor="#133956"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/imageViewCircle2"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewCircle3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:background="@drawable/bg_circle"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/textViewRestaurantsName3"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewRestaurantsName4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_5sdp"
+            android:text="French"
+            android:textColor="#133956"
+            android:textSize="@dimen/_12ssp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewRestaurantsName"
+            app:layout_constraintStart_toEndOf="@id/imageViewCircle3"
+            app:layout_constraintTop_toTopOf="@id/textViewRestaurantsName" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintMin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:background="@drawable/bg_green"
+            android:backgroundTint="#F3F3F3"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            app:layout_constraintStart_toStartOf="@id/guidLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewRestaurantsName">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:tint="#163E5F"
+                app:layout_constraintBottom_toBottomOf="@id/constraintMin"
+                app:layout_constraintStart_toStartOf="@id/constraintMin"
+                app:layout_constraintTop_toTopOf="@id/constraintMin"
+                app:srcCompat="@drawable/ic_location" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewMin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="30 Min"
+                android:textColor="#A7A7A7"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewMin"
+                app:layout_constraintStart_toEndOf="@id/imageViewMin"
+                app:layout_constraintTop_toTopOf="@id/imageViewMin" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintOrderPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_8sdp"
+            android:background="@drawable/bg_green"
+            android:backgroundTint="#F3F3F3"
+            android:paddingHorizontal="@dimen/_8sdp"
+            android:paddingVertical="@dimen/_3sdp"
+            app:layout_constraintStart_toEndOf="@id/constraintMin"
+            app:layout_constraintTop_toTopOf="@+id/constraintMin">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:text="Min Order:"
+                android:textColor="#A7A7A7"
+                android:textSize="@dimen/_12ssp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintOrderPrice"
+                app:layout_constraintStart_toStartOf="@id/constraintOrderPrice"
+                app:layout_constraintTop_toTopOf="@id/constraintOrderPrice" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewOrderPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_8sdp"
+                android:text="$ 15"
+                android:textColor="@color/black"
+                android:textSize="@dimen/_10sdp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintOrderPrice"
+                app:layout_constraintStart_toEndOf="@id/textViewOrder"
+                app:layout_constraintTop_toTopOf="@id/constraintOrderPrice" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+

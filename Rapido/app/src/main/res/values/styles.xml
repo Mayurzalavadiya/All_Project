@@ -1,0 +1,319 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    //set in manifests file on splashscreen
+
+    <style name="Theme.RemoveSplashScreenTheme" parent="@style/AppTheme">
+        <item name="android:windowIsTranslucent">true</item>
+    </style>
+    //TextView
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="layout_constrainedWidth">true</item>
+    </style>
+
+    //EditText
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="android:textCursorDrawable">@drawable/color_cursor</item>
+    </style>
+
+    //Button
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    //Text Font Family
+
+    <style name="TextView.Regular">
+        <item name="android:fontFamily">@font/font_circular_regular</item>
+    </style>
+
+    <style name="Button.Regular">
+        <item name="android:fontFamily">@font/font_circular_regular</item>
+    </style>
+
+    <style name="EditText.Regular">
+        <item name="android:fontFamily">@font/font_circular_regular</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular">
+        <item name="android:fontFamily">@font/poppins_regular</item>
+    </style>
+
+    <style name="TextView.Medium">
+        <item name="android:fontFamily">@font/font_circular_medium</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium">
+        <item name="android:fontFamily">@font/poppins_medium</item>
+    </style>
+
+    <style name="Button.Medium">
+        <item name="android:fontFamily">@font/font_circular_medium</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="android:fontFamily">@font/font_circular_bold</item>
+    </style>
+
+
+    //TextSize
+
+    //34 sp
+
+    <style name="TextView.Bold.sp34">
+        <item name="android:textSize">@dimen/_32ssp</item>
+    </style>
+    //26 sp
+
+    <style name="TextView.Bold.sp26">
+        <item name="android:textSize">@dimen/_24ssp</item>
+    </style>
+
+    //20 sp
+
+    <style name="TextView.Bold.sp20">
+        <item name="android:textSize">@dimen/_18ssp</item>
+    </style>
+
+    //18 sp
+
+    <style name="TextView.Regular.sp18">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    //16 sp
+
+    <style name="TextView.Regular.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular.sp16">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="EditText.Regular.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+
+    //15 sp
+
+    <style name="TextView.PoppinsMedium.sp15">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    //12 sp
+
+    <style name="Button.Regular.sp12">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    <style name="TextView.Regular.sp12">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+
+    <style name="TextView.Medium.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="Button.Medium.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    //14 sp
+
+    <style name="TextView.Regular.sp14">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+
+    //textColor
+
+    <style name="TextView.Bold.sp34.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Bold.sp26.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Bold.sp20.colorPrimaryDark">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextView.PoppinsMedium.sp16.Black">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="TextView.Regular.sp18.white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+
+    <style name="TextView.Regular.sp16.Black">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.white">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.colorPrimaryDark">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.LightSky">
+        <item name="android:textColor">@color/LightSky</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.Grey">
+        <item name="android:textColor">@color/Grey</item>
+    </style>
+
+    <style name="TextView.PoppinsRegular.sp16.GreyLight2">
+        <item name="android:textColor">@color/GreyLight2</item>
+    </style>
+
+    <style name="Button.Regular.sp12.Grey">
+        <item name="android:textColor">@color/Grey</item>
+    </style>
+
+    <style name="TextView.Regular.sp12.Grey">
+        <item name="android:textColor">@color/Grey</item>
+    </style>
+
+    <style name="TextView.Regular.sp14.Grey">
+        <item name="android:textColor">@color/Grey</item>
+    </style>
+
+    <style name="TextView.Medium.sp16.colorPrimaryDark">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+    <style name="EditText.Regular.sp16.colorPrimary">
+        <item name="android:textColor">@color/colorPrimary</item>
+    </style>
+
+    <style name="EditText.Regular.sp16.Black">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="Button.Medium.sp16.colorPrimaryDark">
+        <item name="android:textColor">@color/colorPrimaryDark</item>
+    </style>
+
+
+    //15 sp
+
+    <style name="TextView.PoppinsMedium.sp15.LightBlack">
+        <item name="android:textColor">@color/LightBlack</item>
+    </style>
+    //background
+
+    <style name="Button.Medium.sp16.colorPrimaryDark.Background">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+    <style name="Button.Regular.sp12.Grey.Background">
+        <item name="android:layout_width">@dimen/_45sdp</item>
+        <item name="android:layout_height">@dimen/_22sdp</item>
+        <item name="android:background">@drawable/bg_button_view_password</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextView.Regular.sp12.Grey.Background">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/_6sdp</item>
+        <item name="android:paddingBottom">@dimen/_6sdp</item>
+        <item name="android:paddingStart">@dimen/_9sdp</item>
+        <item name="android:paddingEnd">@dimen/_9sdp</item>
+        <item name="android:background">@drawable/bg_button_view_password</item>
+    </style>
+
+    <style name="ConstraintBackgroundLogin">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_edit_login</item>
+        <item name="android:paddingTop">@dimen/_11sdp</item>
+        <item name="android:paddingBottom">@dimen/_11sdp</item>
+        <item name="android:paddingStart">@dimen/_9sdp</item>
+        <item name="android:paddingEnd">@dimen/_9sdp</item>
+    </style>
+
+    <style name="ConstraintBackgroundLogin.SignUp">
+        <item name="android:background">@drawable/bg_sign_up</item>
+    </style>
+
+
+    <style name="TextView.PoppinsMedium.sp15.LightBlack.Background">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_text_interest_list</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+        <item name="android:paddingStart">@dimen/_9sdp</item>
+        <item name="android:paddingEnd">@dimen/_9sdp</item>
+    </style>
+
+    <style name="EditText.Regular.sp16.colorPrimary.Background">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/bg_text_interest_list</item>
+        <item name="android:paddingTop">@dimen/_15sdp</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:paddingEnd">@dimen/_15sdp</item>
+        <item name="layout_constraintDimensionRatio">1:1</item>
+    </style>
+
+    <style name="EditText.Regular.sp16.Black.Background">
+        <item name="android:textColor">@color/colorPrimary</item>
+        <item name="android:background">@drawable/bg_text_interest_list</item>
+        <item name="android:paddingTop">@dimen/_15sdp</item>
+        <item name="android:paddingBottom">@dimen/_15sdp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:paddingStart">@dimen/_15sdp</item>
+        <item name="android:paddingEnd">@dimen/_15sdp</item>
+    </style>
+
+    <style name="EditText.Regular.sp16.Black.Background1">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_sign_up</item>
+        <item name="android:paddingTop">@dimen/_11sdp</item>
+        <item name="android:paddingBottom">@dimen/_11sdp</item>
+        <item name="android:paddingStart">@dimen/_11sdp</item>
+        <item name="android:paddingEnd">@dimen/_9sdp</item>
+        <item name="android:ellipsize">end</item>
+    </style>
+
+
+    <style name="customProgressBar" parent="@android:style/Widget.ProgressBar">
+        <item name="android:progressDrawable">@drawable/progressbar</item>
+    </style>
+
+
+</resources>

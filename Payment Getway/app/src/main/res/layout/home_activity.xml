@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.activity.HomeActivity">
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:minHeight="120dp"
+        android:text="Payment Gateway Demo"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edit_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="6dp"
+        android:gravity="center"
+        android:hint="Enter Amount"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textviewPayment" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPayment"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:text="Pay Now !!"
+        app:layout_constraintTop_toBottomOf="@id/edit_amount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/paymentStatus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="8dp"
+        android:text="Payment Status"
+        android:textAlignment="center"
+        android:textSize="14sp"
+        app:layout_constraintTop_toBottomOf="@id/buttonPayment" />
+
+
+    <com.paypal.checkout.paymentbutton.PaymentButtonContainer
+        android:id="@+id/buttonPaypal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        app:layout_constraintTop_toBottomOf="@id/paymentStatus"
+        app:paypal_button_color="silver"
+        app:paypal_button_enabled="true"
+        app:paypal_button_label="pay"
+        app:paypal_button_shape="rectangle"
+        app:paypal_button_size="large" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonStripe"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:text="Stripe Pay Now !!"
+        app:layout_constraintTop_toBottomOf="@id/buttonPaypal" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonPhonePay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:text="Phone Pay !!"
+        app:layout_constraintTop_toBottomOf="@id/buttonStripe" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/googlePayButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:drawablePadding="10dp"
+        android:layout_marginEnd="12dp"
+        android:drawableStart="@drawable/google"
+        android:gravity="center_vertical|start"
+        android:text="Pay"
+        app:layout_constraintTop_toBottomOf="@id/buttonPhonePay" />
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonQrScanner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="12dp"
+        android:text="Qr Scanner"
+        app:layout_constraintTop_toBottomOf="@id/googlePayButton" />
+</androidx.constraintlayout.widget.ConstraintLayout>

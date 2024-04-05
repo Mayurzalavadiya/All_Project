@@ -1,0 +1,10 @@
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@android:id/text1"
+    style="@style/TextView.Regular.sp16.Black"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingEnd="@dimen/_5sdp"
+    android:paddingStart="0dp"
+    android:gravity="start"
+    android:drawableEnd="@drawable/arrow_down"
+    android:singleLine="true" />

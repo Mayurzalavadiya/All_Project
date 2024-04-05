@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.home.fragment.HomeFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintSearchView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:background="@drawable/bg_border_lightgrey_26px"
+        android:paddingHorizontal="@dimen/_12sdp"
+        app:layout_constraintEnd_toStartOf="@id/imageViewNotification"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.SearchView
+            android:id="@+id/searchView"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:iconifiedByDefault="false"
+            app:layout_constraintBottom_toBottomOf="@id/constraintSearchView"
+            app:layout_constraintEnd_toStartOf="@id/imageViewIcon"
+            app:layout_constraintStart_toStartOf="@id/constraintSearchView"
+            app:layout_constraintTop_toTopOf="@id/constraintSearchView"
+            app:queryBackground="@android:color/transparent"
+            app:queryHint="Search candles"
+            app:searchIcon="@drawable/search_icon" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewIcon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="@id/constraintSearchView"
+            app:layout_constraintEnd_toEndOf="@id/constraintSearchView"
+            app:layout_constraintTop_toTopOf="@id/constraintSearchView"
+            app:srcCompat="@drawable/camera_icon" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewNotification"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_14sdp"
+        app:layout_constraintBottom_toBottomOf="@id/constraintSearchView"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/constraintSearchView"
+        app:layout_constraintTop_toTopOf="@id/constraintSearchView"
+        app:srcCompat="@drawable/notification_icon" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewLocation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        app:layout_constraintEnd_toStartOf="@id/textviewDeliverTo"
+        app:layout_constraintHorizontal_chainStyle="packed"
+        app:layout_constraintStart_toEndOf="@id/constraintSearchView"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/constraintSearchView"
+        app:srcCompat="@drawable/location_icon" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDeliverTo"
+        style="@style/TextView.Regular.sp14.DarkGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:lines="1"
+        android:text="Deliver to"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewLocation"
+        app:layout_constraintEnd_toStartOf="@id/textviewLocation"
+        app:layout_constraintStart_toEndOf="@id/imageViewLocation"
+        app:layout_constraintTop_toTopOf="@id/imageViewLocation" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewLocation"
+        style="@style/TextView.Bold.sp14.DarkGrey"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        android:ellipsize="end"
+        android:lines="1"
+        android:text="3517 W. Gray St. Utica, Pennsylvania"
+        app:layout_constraintBottom_toBottomOf="@id/imageViewLocation"
+        app:layout_constraintEnd_toStartOf="@id/imageViewDown"
+        app:layout_constraintStart_toEndOf="@id/textviewDeliverTo"
+        app:layout_constraintTop_toTopOf="@id/imageViewLocation"
+        app:layout_goneMarginStart="@dimen/_8sdp" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/imageViewDown"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_8sdp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageViewLocation"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/textviewLocation"
+        app:layout_constraintTop_toTopOf="@+id/imageViewLocation"
+        app:srcCompat="@drawable/down_icon" />
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/viewPagerBanner"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_180sdp"
+        android:layout_marginTop="@dimen/_19sdp"
+        app:layout_constraintBottom_toTopOf="@id/recyclerviewIndicator"
+        app:layout_constraintTop_toBottomOf="@id/imageViewLocation"
+        app:layout_constraintVertical_bias="0"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewIndicator"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constrainedWidth="true"
+        app:layout_constraintBottom_toTopOf="@id/textviewSpecialOffer"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/viewPagerBanner"
+        tools:listitem="@layout/indicator_layout" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewSpecialOffer"
+        style="@style/TextView.SemiBold.sp24.DarkGrey"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:text="Special Offers"
+        app:layout_constraintBottom_toTopOf="@id/recyclerViewSpecialOffer"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintHorizontal_bias="0"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/recyclerviewIndicator" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewSeeMore"
+        style="@style/TextView.Bold.sp14.colorPrimary"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_19sdp"
+        android:text="@string/textview_see_more"
+        app:layout_constraintBottom_toBottomOf="@+id/textviewSpecialOffer"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintTop_toTopOf="@+id/textviewSpecialOffer" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewSpecialOffer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:orientation="horizontal"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        app:layout_constraintTop_toBottomOf="@id/textviewSpecialOffer"
+        tools:listitem="@layout/specialoffer_list_view" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+

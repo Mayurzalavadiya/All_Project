@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">Task2</string>
+
+    <string name="create_account">Create Account</string>
+    <string name="full_name">Full Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="email_optional">Email (optional)</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="password">Password</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="referral_code">Referral Code</string>
+    <string name="i_agree_to_terms_condition"><![CDATA[I agree to Terms & Condition]]></string>
+    <string name="by_continuing_you_agree_to_the_nterms_of_service_and_privacy_policy">By continuing, you agree to the Terms of Service and Privacy Policy.</string>
+
+    <string name="add_new_address">Add New Address</string>
+    <string name="street_address">Street Address</string>
+    <string name="address_name">Address Name</string>
+    <string name="address_type">Address Type</string>
+    <string name="additional_delivery_notes">Additional Delivery Notes</string>
+    <string name="address_description">Address Description</string>
+    <string name="zipcode">Zipcode</string>
+    <string name="country">Country</string>
+
+      <string-array name="types">
+          <item>Address Type</item>
+          <item>Home</item>
+          <item>Work</item>
+          <item>Office</item>
+      </string-array>
+    //Validation
+    <string name="validation_please_enter_first_name">Please enter first name</string>
+    <string name="validation_please_enter_last_name">Please enter last name</string>
+    <string name="validation_please_enter_an_email_address">Please enter an email address</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="validation_please_enter_mobile_number">Please enter mobile number</string>
+    <string name="validation_please_enter_a_valid_mobile_number">Please enter a 10 digits mobile number</string>
+    <string name="validation_please_enter_a_password">Please enter a password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_please_enter_a_confirm_password">Please enter a confirm password</string>
+    <string name="validation_password_mitch_match">Password mitch match</string>
+    <string name="validation_please_referral_code">Please enter referral code</string>
+    <string name="validation_signup_successfully">Signup Successfully</string>
+    <string name="validation_login_successfully">Login Successfully</string>
+    <string name="validation_please_check_terms_condition">Please select terms &amp; conditions</string>
+
+
+</resources>

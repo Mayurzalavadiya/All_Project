@@ -1,0 +1,30 @@
+
+p
+java:S1066`"/Merge this if statement with the enclosing one.(êÿ×¤ùÿÿÿÿJ$b27faa1a-5999-40bc-9265-f985402709ad
+j
+java:S1604¶"(Make this anonymous inner class a lambda(°éåóøÿÿÿÿJ$2cbc94cd-8fc8-46d1-bbf1-c3aee76462bb
+e
+java:S1604¾"(Make this anonymous inner class a lambda(’Ã’óJ$d99aacca-0fe4-4b7d-b840-4dc637d8f9b2
+‡
+java:S2184)"FCast one of the operands of this multiplication operation to a "long".(¼áÉúÿÿÿÿJ$a701c9a0-9636-40ac-add5-eb36d8492ea6
+
+java:S2589^"7Remove this expression which always evaluates to "true"(“«ó™şÿÿÿÿ8ÛæÙæÚ1J$a65d1fda-18f3-42ce-8d6c-cf7fa243ead8
+¾
+java:S1186Ë"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(­íÖ«J$e95f221a-07fa-42f8-b17c-30bdcfb09039
+¾
+java:S1186Ï"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÁïÕÒJ$d2ad36bf-da41-458e-8bf6-b95bb095cb2c
+¾
+java:S1186Ó"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(çÅğÙJ$c5718454-7137-4296-848c-55d29ee2fc8d
+¾
+java:S1186×"€Add a nested comment explaining why this method is empty, throw an UnsupportedOperationException or complete the implementation.(ÀÄŞ’J$bbb9d9ee-5dbc-4a05-9a2f-86d8df92950e
+“
+java:S37763"RRefactor this method to reduce its Cognitive Complexity from 36 to the 15 allowed.(øˆ÷ÃùÿÿÿÿJ$7b3bc4e8-dd91-48d4-a0b7-7df5f6030b5a
+|	java:S125:"<This block of commented-out lines of code should be removed.(ÌûÿÿÿÿJ$2ff2aaf9-4046-4d70-a379-822a756530de
+w	java:S125C"<This block of commented-out lines of code should be removed.(ı‚–ÿJ$372a0be3-e66c-499a-9fdc-f97a66905b8b
+™
+java:S3252H"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(µ‰¯08†çÙæÚ1J$af76f77f-546c-4e31-842d-d82e51340868
+Ÿ
+java:S3252J"WUse static access with "androidx.core.content.ContextCompat" for "checkSelfPermission".(ÍĞÖ¸ûÿÿÿÿ8ŒçÙæÚ1J$a6dcfc49-9c65-4d13-9af4-6bd36abf7ae9
+i	java:S108K")Either remove or fill this block of code.(ŠÊ¥æÿÿÿÿÿJ$0f3eca85-73c5-4885-afd4-363e474ceb8f
+‡
+java:S1874×"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ÀÄŞ’J$eb35709f-e522-46b6-9f28-5eaf9ff63ffa

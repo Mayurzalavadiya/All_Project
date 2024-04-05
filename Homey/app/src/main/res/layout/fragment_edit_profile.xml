@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:fillViewport="true"
+    tools:context=".ui.home.settings.fragment.EditProfileFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewEditProfile"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview_edit_profile"
+            app:layout_constraintBottom_toBottomOf="@id/imageviewBack"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/imageviewBack"
+            app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:background="@drawable/bg_white54per_15px"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewEditProfile">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineStart1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.05" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideLineEnd1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.95" />
+
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/imageviewUser"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint"
+                app:shapeAppearanceOverlay="@style/customRoundedImageViewTop"
+                app:srcCompat="@drawable/profile_edit" />
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewAdd"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="@id/imageviewUser"
+                app:layout_constraintEnd_toEndOf="@id/imageviewUser"
+                app:layout_constraintTop_toBottomOf="@id/imageviewUser"
+                app:srcCompat="@drawable/camera_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewFirstName"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_first_name"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/imageviewUser" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextFirstName"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_first_name"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewFirstName" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewLastName"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/edittextFirstName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewLastName"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_last_name"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextLastName"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_last_name"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewLastName" />
+
+            <View
+                android:id="@+id/view2"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewCode"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/edittextLastName" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewCode"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_code"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+
+            <com.hbb20.CountryCodePicker
+                android:id="@+id/countrycode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_5sdp"
+                app:ccp_arrowColor="@color/Gray"
+                app:ccp_autoDetectCountry="true"
+                app:ccp_defaultNameCode="IND"
+                app:ccp_showArrow="true"
+                app:ccp_showFlag="false"
+                app:ccp_showFullName="false"
+                app:ccp_showNameCode="false"
+                app:ccp_textGravity="LEFT"
+                app:ccp_textSize="@dimen/_14ssp"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewCode" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewPhoneNumber"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_16sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_phone_number"
+                app:layout_constraintBottom_toBottomOf="@+id/textviewCode"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toEndOf="@id/countrycode"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextPhoneNumber"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_number"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                app:layout_constraintBottom_toBottomOf="@id/countrycode"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/textviewPhoneNumber"
+                app:layout_constraintTop_toBottomOf="@id/textviewPhoneNumber" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewEmail"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/edittextPhoneNumber" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewEmail"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_email"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintHorizontal_bias="0"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextEmail"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:backgroundTint="@color/Gray"
+                android:hint="@string/edittext_your_email_id"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/textviewEmail" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/lineview15"
+                android:layout_marginBottom="@dimen/_14sdp"
+                app:layout_constraintBottom_toBottomOf="@id/constraint"
+                app:layout_constraintEnd_toEndOf="@id/guideLineEnd1"
+                app:layout_constraintStart_toStartOf="@id/guideLineStart1"
+                app:layout_constraintTop_toBottomOf="@id/edittextEmail" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonUpdate"
+            style="@style/Button.Regular.sp16.White.Background"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="@string/button_update"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/constraint"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

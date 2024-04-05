@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".ui.home.settings.fragment.AddCardBottomSheetFragment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewAddCard"
+        style="@style/TextView.Bold.sp22.PrimaryBlack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_18sdp"
+        android:text="@string/textview_add_card"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewAddDetail"
+        style="@style/TextView.Bold.sp14.Gray"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_8sdp"
+        android:text="@string/textview_add_credit_debit_card_details"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewAddCard" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/bg_gray40per_15px"
+        android:padding="@dimen/_17sdp"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/textviewAddDetail">
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewCardNumber"
+            style="@style/TextView.Regular.sp13.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_card_number"
+            app:layout_constraintBottom_toTopOf="@id/edittextCardNumber"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextCardNumber"
+            style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/Gray"
+            android:hint="@string/edittext_enter_card_number"
+            android:imeOptions="actionNext"
+            android:inputType="number"
+            app:layout_constraintBottom_toTopOf="@id/view"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textviewCardNumber" />
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/Gray"
+            app:layout_constraintBottom_toTopOf="@id/textviewNameonCard"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittextCardNumber" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewNameonCard"
+            style="@style/TextView.Regular.sp13.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/textview_name_on_card"
+            app:layout_constraintBottom_toTopOf="@id/edittextNameonCard"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextNameonCard"
+            style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/Gray"
+            android:hint="@string/edittext_enter_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@id/view2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textviewNameonCard" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/Gray"
+            app:layout_constraintBottom_toTopOf="@id/textviewExpDate"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittextNameonCard" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewExpDate"
+            style="@style/TextView.Regular.sp13.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/textview_exp_date"
+            app:layout_constraintBottom_toTopOf="@id/edittextExpDate"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextExpDate"
+            style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/Gray"
+            android:hint="@string/edittext_enter_exp_date"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            app:layout_constraintBottom_toTopOf="@id/view3"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textviewExpDate" />
+
+        <View
+            android:id="@+id/view3"
+            android:layout_width="0dp"
+            android:layout_height="@dimen/_1sdp"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:background="@color/Gray"
+            app:layout_constraintBottom_toTopOf="@id/textviewCVV"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/edittextExpDate" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewCVV"
+            style="@style/TextView.Regular.sp13.Grey"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_11sdp"
+            android:text="@string/textview_cvv"
+            app:layout_constraintBottom_toTopOf="@id/edittextCVV"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/view3" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextCVV"
+            style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/Gray"
+            android:hint="@string/edittext_enter_cvv"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/textviewCVV" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAdd"
+        style="@style/Button.Regular.sp16.White.Background"
+        android:layout_marginVertical="@dimen/_16sdp"
+        android:stateListAnimator="@null"
+        android:text="@string/bbutton_add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@+id/constraint" />
+</androidx.constraintlayout.widget.ConstraintLayout>

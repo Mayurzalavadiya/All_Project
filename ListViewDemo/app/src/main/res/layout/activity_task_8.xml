@@ -1,0 +1,224 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".task8.activity.Task8Activity">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineStart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.05" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideLineEnd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.95" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextName"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_5sdp"
+        android:hint="@string/product_name"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:lines="1"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:text="Tomato"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/edittextPrice"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edittextPrice"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="@string/price"
+        android:imeOptions="actionDone"
+        android:inputType="number"
+        android:lines="1"
+        android:paddingHorizontal="@dimen/_12sdp"
+        android:text="25"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toEndOf="@+id/edittextName"
+        app:layout_constraintTop_toTopOf="@+id/edittextName" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/buttonAdd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/_10sdp"
+        android:text="@string/add"
+        android:background="@drawable/my_rectangle"
+        app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@id/edittextPrice"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewList"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/product_list"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorTextLightGray"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewProduct"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalPrice"
+        app:layout_constraintEnd_toStartOf="@id/view"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewList" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="@dimen/_2sdp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        android:background="@color/colorTextLightGray"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalPrice"
+        app:layout_constraintEnd_toStartOf="@id/recyclerViewBill"
+        app:layout_constraintStart_toEndOf="@id/recyclerViewProduct"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingVertical="@dimen/_12sdp"
+        android:text="@string/bill"
+        android:textSize="@dimen/_12ssp"
+        android:textColor="@color/colorTextLightGray"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/buttonAdd" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewBill"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="@dimen/_20sdp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTotalPrices"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/view"
+        app:layout_constraintTop_toBottomOf="@id/textViewPrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTotalPrices"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:textSize="@dimen/_18ssp"
+        android:text="@string/_0_0"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewTotalPrice"
+        app:layout_constraintTop_toTopOf="@+id/textViewTotalPrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewTotalPrice"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:text="@string/total_price"
+        android:textColor="@color/colorTextLightGray"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/spinnerDiscount"
+        app:layout_constraintEnd_toStartOf="@id/textViewTotalPrices"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textviewDiscount"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:text="@string/discount"
+        android:textColor="@color/colorTextLightGray"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDiscountPrice"
+        app:layout_constraintEnd_toStartOf="@id/spinnerDiscount"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTotalPrices" />
+
+    <androidx.appcompat.widget.AppCompatSpinner
+        android:id="@+id/spinnerDiscount"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textviewDiscount"
+        app:layout_constraintTop_toTopOf="@id/textviewDiscount" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDiscountPrices"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:textSize="@dimen/_18ssp"
+        android:text="@string/_0_0"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/textViewFinalPrice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewDiscountPrice" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewDiscountPrice"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:text="@string/discount_price"
+        android:textColor="@color/colorTextLightGray"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/textViewFinalPrice"
+        app:layout_constraintEnd_toStartOf="@id/textViewDiscountPrices"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFinalPrice"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:paddingVertical="@dimen/_3sdp"
+        android:text="@string/final_price"
+        android:textColor="@color/colorTextLightGray"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@id/textViewFinalPrices"
+        app:layout_constraintStart_toStartOf="@id/guideLineStart" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/textViewFinalPrices"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/_40sdp"
+        android:text="@string/_0_0"
+        android:paddingVertical="@dimen/_3sdp"
+        android:textSize="@dimen/_18ssp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/textViewFinalPrice" />
+</androidx.constraintlayout.widget.ConstraintLayout>

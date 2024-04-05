@@ -1,0 +1,245 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/l5_background_border"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/ic_home"
+            tools:ignore="LabelFor" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/ic_person" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@drawable/l5_background_border"
+            android:paddingHorizontal="20dp"
+            android:src="@drawable/ic_arrow_back"
+            tools:ignore="LabelFor" />
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginBottom="2dp"
+        android:layout_weight="2"
+        android:background="@drawable/l5_background_border"
+        android:padding="5dp"
+        android:src="@drawable/kotlin" />
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="2dp"
+        android:layout_weight="2"
+        android:orientation="horizontal"
+        android:weightSum="3">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:text="@string/one" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:text="@string/two" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:gravity="center"
+                android:text="@string/three" />
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="2"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/custom_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/l5_button"
+                    android:text="@string/four" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    style="@style/custom_button"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="2dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/l5_button"
+                    android:text="@string/five" />
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="2dp"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:weightSum="3">
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:text="@string/six" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginVertical="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:text="@string/seven" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/custom_button"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_marginTop="2dp"
+                android:layout_weight="1"
+                android:background="@drawable/l5_button"
+                android:text="@string/eight" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginVertical="2dp"
+        android:layout_weight="4">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:background="@drawable/l5_button"
+                android:text="@string/nine" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/ten" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/eleven" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/twelve" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/thirteen" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/fourteen" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                style="@style/scrollButton"
+                android:text="@string/fifteen" />
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </ScrollView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/scrollButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/l5_button"
+            android:text="@string/pre"
+            android:textAllCaps="false" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            style="@style/scrollButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="2dp"
+            android:layout_weight="1"
+            android:background="@drawable/l5_button"
+            android:text="@string/next"
+            android:textAllCaps="false" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+</androidx.appcompat.widget.LinearLayoutCompat>

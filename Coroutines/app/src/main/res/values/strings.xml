@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Coroutines</string>
+
+    <string name="button_coroutine">Coroutine</string>
+    <string name="button_demo_1">Demo 1</string>
+    <string name="button_thread">Thread</string>
+    <string name="button_lifecycle_scope">Lifecycle Scope</string>
+    <string name="button_launch_builder">Launch Builder</string>
+    <string name="button_async_bulder">Async Bulder</string>
+</resources>

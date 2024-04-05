@@ -1,0 +1,21 @@
+
+j
+:app/src/main/java/com/example/test/ui/base/BaseActivity.kt,d/f/dfcbb0e6cfbe3855007356ec7ffe1387b27127a0
+l
+<app/src/main/java/com/example/test/ui/adapter/GridAdapter.kt,8/4/840cff310d11cece3e1644d90eb2d9d89d7f884c
+p
+@app/src/main/java/com/example/test/ui/interfaces/EditListener.kt,0/e/0ea15fa3ae5a74fbcfe40b8cc660e7cc78771672
+r
+Bapp/src/main/java/com/example/test/ui/fragment/MyQuotesFragment.kt,b/2/b2db50ca671b4c1fe5b87857f770da01a71c3c40
+P
+ app/src/main/AndroidManifest.xml,8/c/8c55c3ccc257e5907959013f99656e4c8ec3903e
+q
+Aapp/src/main/java/com/example/test/ui/interfaces/ClickListener.kt,d/3/d3037eee85521145b36d1b14ac5f96827a8750b0
+j
+:app/src/main/java/com/example/test/ui/base/BaseFragment.kt,f/6/f615bf45fcdf7731757a5c312b54a15d3edbff97
+m
+=app/src/main/java/com/example/test/ui/fragment/AddFragment.kt,2/a/2a8e68ccce98947366d05511542d571d4d22a89a
+n
+>app/src/main/java/com/example/test/ui/adapter/MyPostAdapter.kt,d/d/ddb13b0296a995491969aae4155bd1136b842f9e
+@
+app/build.gradle,f/4/f4a01d6a4fcb971362ec00a83903fd3902f52164

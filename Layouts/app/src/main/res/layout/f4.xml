@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="10dp"
+    >
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="25dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center_horizontal"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="end"
+        android:layout_margin="25dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="50dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginEnd="50dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginStart="50dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="50dp"
+        android:background="@color/red"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|center_horizontal"
+        android:layout_marginStart="25dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/lightBlue"
+        android:gravity="center"
+        android:text="@string/b" />
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        style="@style/custom_button"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_gravity="bottom|end"
+        android:background="@color/green"
+        android:gravity="center"
+        android:text="@string/b" />
+
+
+</FrameLayout>

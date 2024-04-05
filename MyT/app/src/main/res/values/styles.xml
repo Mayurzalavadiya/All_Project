@@ -1,0 +1,402 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="AppTheme.FullScreen">
+        <item name="android:statusBarColor">@color/white</item>
+    </style>
+
+
+    //TextView
+
+    <style name="TextView" parent="Widget.AppCompat.TextView">
+        <item name="android:textAlignment">viewStart</item>
+        <item name="android:includeFontPadding">false</item>
+    </style>
+
+    //EditText
+
+    <style name="EditText" parent="Widget.AppCompat.EditText">
+        <item name="android:textAlignment">viewStart</item>
+    </style>
+
+    //Button
+
+    <style name="Button" parent="Widget.AppCompat.Button">
+        <item name="android:textAlignment">center</item>
+    </style>
+
+    //Text Font Family
+
+    <style name="TextView.SemiBold">
+        <item name="android:fontFamily">@font/sf_semi_bold</item>
+    </style>
+
+    <style name="Button.SemiBold">
+        <item name="android:fontFamily">@font/sf_semi_bold</item>
+    </style>
+
+    <style name="TextView.Medium">
+        <item name="android:fontFamily">@font/sf_medium</item>
+    </style>
+
+    <style name="EditText.Medium">
+        <item name="android:fontFamily">@font/sf_medium</item>
+    </style>
+
+    <style name="TextView.Regular">
+        <item name="android:fontFamily">@font/sf_regular</item>
+    </style>
+
+    <style name="EditText.Regular">
+        <item name="android:fontFamily">@font/sf_regular</item>
+    </style>
+
+    <style name="Button.Regular">
+        <item name="android:fontFamily">@font/sf_regular</item>
+    </style>
+
+    <style name="TextView.Bold">
+        <item name="android:fontFamily">@font/sf_bold</item>
+    </style>
+
+    <style name="TextView.Light">
+        <item name="android:fontFamily">@font/sf_light</item>
+    </style>
+
+    //TextSize
+
+    //24 sp
+
+    <style name="TextView.Bold.sp24">
+        <item name="android:textSize">@dimen/_22ssp</item>
+    </style>
+
+    //18 sp
+
+    <style name="TextView.Regular.sp18">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="EditText.Medium.sp18">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+    //16sp
+
+    <style name="TextView.Regular.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="TextView.SemiBold.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+
+    <style name="Button.SemiBold.sp16">
+        <item name="android:textSize">@dimen/_14ssp</item>
+    </style>
+    //14 sp
+
+    <style name="TextView.Regular.sp14">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    <style name="EditText.Regular.sp14">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+
+    <style name="TextView.SemiBold.sp14">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+
+    <style name="EditText.Medium.sp14">
+        <item name="android:textSize">@dimen/_12ssp</item>
+    </style>
+
+    //13sp
+
+    <style name="TextView.Regular.sp13">
+        <item name="android:textSize">@dimen/_11ssp</item>
+    </style>
+
+    //12 sp
+
+    <style name="TextView.Regular.sp12">
+        <item name="android:textSize">@dimen/_10ssp</item>
+    </style>
+
+    //10 sp
+
+    <style name="Button.Regular.sp10">
+        <item name="android:textSize">@dimen/_8ssp</item>
+    </style>
+
+    //8 sp
+
+    <style name="TextView.Regular.sp8">
+        <item name="android:textSize">@dimen/_8ssp</item>
+    </style>
+
+    //6 sp
+
+    <style name="EditText.Regular.sp6">
+        <item name="android:textSize">@dimen/_6ssp</item>
+    </style>
+
+    //TextColor
+
+    <style name="TextView.Bold.sp24.DarkBlack">
+        <item name="android:textColor">@color/DarkBlack</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.LightBlack">
+        <item name="android:textColor">@color/LightBlack</item>
+    </style>
+
+    <style name="TextView.Regular.sp16.Black">
+        <item name="android:textColor">@color/Black</item>
+    </style>
+
+    <style name="TextView.Regular.sp12.LightBlack">
+        <item name="android:textColor">@color/LightBlack</item>
+    </style>
+
+    <style name="TextView.Regular.sp14.LightBlack">
+        <item name="android:textColor">@color/LightBlack</item>
+    </style>
+
+    <style name="EditText.Medium.sp18.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="TextView.Regular.sp14.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="EditText.Regular.sp14.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="TextView.Regular.sp18.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="TextView.Regular.sp13.DarkGrey">
+        <item name="android:textColor">@color/DarkGrey</item>
+    </style>
+
+    <style name="TextView.SemiBold.sp14.DarkBlack1">
+        <item name="android:textColor">@color/DarkBlack1</item>
+    </style>
+
+    <style name="TextView.SemiBold.sp16.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="Button.SemiBold.sp16.White">
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <style name="Button.Regular.sp10.PurpleLight">
+        <item name="android:textColor">@color/PurpleLight</item>
+    </style>
+
+    <style name="TextView.Regular.sp8.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="TextView.Regular.sp8.Purple">
+        <item name="android:textColor">@color/Purple</item>
+    </style>
+
+    <style name="EditText.Regular.sp6.DarkBlue">
+        <item name="android:textColor">@color/DarkBlue</item>
+    </style>
+
+    <style name="EditText.Medium.sp14.DarkBlack1">
+        <item name="android:textColor">@color/DarkBlack1</item>
+    </style>
+
+    //constrainedWidth, Bias Horizontal,Font Padding
+
+    <style name="TextView.Bold.sp24.DarkBlack.ConstrainedWidth_Bias">
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias">
+        <item name="layout_constrainedWidth">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="TextView.Regular.sp14.LightBlack.ConstrainedWidth_Bias">
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="TextView.Regular.sp14.DarkBlue.ConstrainedWidth">
+        <item name="android:textColor">@color/DarkBlue</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="layout_constraintHorizontal_bias">0</item>
+    </style>
+
+    <style name="EditText.Medium.sp18.DarkBlue.Background">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:maxLines">1</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:paddingStart">@dimen/_8sdp</item>
+        <item name="android:paddingEnd">@dimen/_8sdp</item>
+        <item name="android:paddingTop">@dimen/_10sdp</item>
+        <item name="android:paddingBottom">@dimen/_10sdp</item>
+        <item name="android:background">@drawable/bg_edit_profile</item>
+    </style>
+
+    <style name="EditText.Regular.sp14.DarkBlue.Background">
+        <item name="android:layout_width">0dp</item>
+        <item name="layout_constrainedWidth">true</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_focusable_edittext</item>
+    </style>
+
+    <style name="EditText.Regular.sp6.DarkBlue.Background">
+        <item name="android:layout_width">@dimen/_24sdp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:textColorHint">@color/GreyText</item>
+        <item name="android:paddingTop">@dimen/_2sdp</item>
+        <item name="android:paddingBottom">@dimen/_2sdp</item>
+        <item name="android:includeFontPadding">false</item>
+        <item name="android:background">@drawable/bg_border_goal</item>
+    </style>
+
+    <style name="Button.SemiBold.sp16.White.Radius_14sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/selector_button_enable</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button.SemiBold.sp16.White.Radius_4sp">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:background">@drawable/bg_button_4px_radius</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="Button.Regular.sp10.PurpleLight.Background">
+        <item name="android:layout_width">@dimen/_50sdp</item>
+        <item name="android:layout_height">0dp</item>
+        <item name="android:background">@drawable/bg_border_button</item>
+        <item name="android:textAllCaps">false</item>
+    </style>
+
+    <style name="TextView.Regular.sp8.DarkBlue.wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="TextView.Regular.sp8.Purple.wrap">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+    </style>
+
+    <style name="EditText.Medium.sp14.DarkBlack1.Background">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:inputType">number</item>
+        <item name="layout_constraintDimensionRatio">1</item>
+        <item name="android:background">@drawable/bg_edittext_otp</item>
+        <item name="android:textAlignment">center</item>
+        <item name="android:maxLength">1</item>
+        <item name="android:padding">@dimen/_8sdp</item>
+        <item name="android:fontFamily">@font/sf_medium</item>
+    </style>
+
+    ////
+
+
+    <style name="editTextOtp">
+
+    </style>
+
+    //Image
+
+    <style name="image">
+        <item name="android:adjustViewBounds">true</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">0dp</item>
+    </style>
+
+    <style name="image.slider">
+        <item name="android:layout_width">@dimen/_80sdp</item>
+        <item name="android:layout_height">@dimen/_5sdp</item>
+    </style>
+
+
+    //Bottom Sheet Dialog
+
+    <style name="BottomSheetDialogTheme" parent="BaseBottomSheetDialog" />
+
+    <style name="BaseBottomSheetDialog" parent="Theme.Design.Light.BottomSheetDialog">
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowSoftInputMode">adjustResize</item>
+        <item name="bottomSheetStyle">@style/BottomSheet</item>
+    </style>
+
+    <style name="BottomSheet" parent="Widget.Design.BottomSheet.Modal">
+        <item name="android:background">@drawable/bg_bottom_dialog</item>
+    </style>
+
+    <style name="CustomBottomSheetDialog">
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackground">@color/black50p</item>
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/white</item>
+    </style>
+    -->
+
+    <style name="productConstraint">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingEnd">@dimen/_12sdp</item>
+        <item name="android:paddingStart">@dimen/_12sdp</item>
+    </style>
+
+<style name="hintTextViewMobileNumber">
+    <item name="hintTextColor">@color/DarkGrey</item>
+    <item name="android:textColorHint">@color/DarkGrey</item>
+</style>
+
+    <style name="DatePickerDialog" parent="@android:style/Widget.Material.Light.DatePicker">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowIsFloating">true</item>
+        <!--        <item name="android:windowIsTranslucent">true</item>-->
+        <item name="colorAccent">@color/Purple</item>
+    </style>
+
+
+    //Alert dialog
+
+        <style name="CustomAlertDialog" parent="Theme.AppCompat.Light.Dialog.Alert">
+            <item name="android:windowBackground">@drawable/bg_alert_dialog</item>
+        </style>
+
+
+    <style name="BottomBar" parent="Theme.MaterialComponents.Light">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+</resources>

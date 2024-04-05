@@ -1,0 +1,17 @@
+
+f
+java:S13014"KReplace this "switch" statement by "if" statements to increase readability.(×“¾ñùÿÿÿÿ
+j	java:S116"URename this field "RC_SIGN_IN" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÎóÎÀ
+Q
+java:S1854,";Remove this useless assignment to local variable "account".(ôÎ×
+B
+java:S1481,",Remove this unused "account" local variable.(ôÎ×
+V	java:S125-"<This block of commented-out lines of code should be removed.(„ßÜıÿÿÿÿ
+<	java:S1314""Add a default case to this switch.(×“¾ñùÿÿÿÿ
+[
+java:S1874>">Remove this use of "startActivityForResult"; it is deprecated.(ØãÂà8™ĞÙæÚ1
+l
+java:S1874B"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ÉÎÍïıÿÿÿÿ8šĞÙæÚ1
+Q	java:S125E"<This block of commented-out lines of code should be removed.(˜Î‹Ã
+V	java:S125S"<This block of commented-out lines of code should be removed.(„ßÜıÿÿÿÿ
+Q	java:S125f"<This block of commented-out lines of code should be removed.(á„Õ©

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.03" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop"
+            app:srcCompat="@drawable/icon_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTitle"
+            style="@style/TextView.Medium.sp32.colorAccent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_41sdp"
+            android:text="@string/textview_sign_in"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/imageviewBack" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewEmail"
+            style="@style/TextView.Regular.sp16.GreyLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/textview_email_address"
+            android:layout_marginTop="@dimen/_28sdp"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTitle" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextEmail"
+            style="@style/EditText.Regular.sp16.colorPrimary.Background"
+            android:drawableStart="@drawable/icon_email"
+            android:drawablePadding="@dimen/_11sdp"
+            android:inputType="textEmailAddress"
+            android:imeOptions="actionNext"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewEmail" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewPassword"
+            style="@style/TextView.Regular.sp16.GreyLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_16sdp"
+            android:text="@string/textview_password"
+            app:layout_constraintBottom_toTopOf="@id/textviewPassword"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/edittextEmail" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextPassword"
+            style="@style/EditText.Regular.sp16.colorPrimary.Background"
+            android:drawableStart="@drawable/icon_lock"
+            android:drawableEnd="@drawable/icon_toggle"
+            android:drawablePadding="@dimen/_11sdp"
+            android:imeOptions="actionDone"
+            android:inputType="textPassword"
+            android:letterSpacing="0.1"
+            android:maxLength="8"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewPassword" />
+<!--        <include-->
+<!--            android:id="@+id/layoutEmailPassword"-->
+<!--            layout="@layout/email_password_layout"-->
+<!--            android:layout_width="0dp"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_marginTop="@dimen/_28sdp"-->
+<!--            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"-->
+<!--            app:layout_constraintStart_toStartOf="@id/guideLineStart"-->
+<!--            app:layout_constraintTop_toBottomOf="@+id/textviewTitle" />-->
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonSignIn"
+            style="@style/Button.SemiBole.sp14.White.Background"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:text="@string/textview_sign_in"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/edittextPassword" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewNewUser"
+            style="@style/TextView.Regular.sp16.GreyLight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_22sdp"
+            android:layout_marginBottom="@dimen/_18sdp"
+            android:text="@string/textview_i_m_a_new_user_sign_in"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/buttonSignIn"
+            app:layout_constraintVertical_bias="0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

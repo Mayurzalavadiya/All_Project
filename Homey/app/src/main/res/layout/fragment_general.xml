@@ -1,0 +1,299 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.home.settings.fragment.GeneralFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/White"
+            android:paddingHorizontal="@dimen/_16sdp"
+            android:paddingVertical="@dimen/_9sdp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewBack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="@dimen/_3sdp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/back_arrow_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewGeneral"
+                style="@style/TextView.Bold.sp16.PrimaryBlack"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_general"
+                app:layout_constraintBottom_toBottomOf="@id/imageviewBack"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/imageviewBack"
+                app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintMenu"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_15sdp"
+            android:background="@drawable/bg_white_15px"
+            android:padding="@dimen/_16sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraint">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewChangePassword"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_change_password"
+                app:layout_constraintBottom_toTopOf="@id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewRateApp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewChangePassword" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewRateApp"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_rate_app"
+                app:layout_constraintBottom_toTopOf="@id/view1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <View
+                android:id="@+id/view1"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewShareApp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewRateApp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewShareApp"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_share_app"
+                app:layout_constraintBottom_toTopOf="@id/view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view1" />
+
+            <View
+                android:id="@+id/view2"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewFAQ"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewShareApp" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewFAQ"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_faq"
+                app:layout_constraintBottom_toTopOf="@id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <View
+                android:id="@+id/view3"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewTermsConditions"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewFAQ" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewTermsConditions"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_terms_amp_conditions"
+                app:layout_constraintBottom_toTopOf="@id/view4"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+
+            <View
+                android:id="@+id/view4"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewPrivacyPolicy"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewTermsConditions" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewPrivacyPolicy"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_privacy_policy"
+                app:layout_constraintBottom_toTopOf="@id/view5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view4" />
+
+            <View
+                android:id="@+id/view5"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewAboutUs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewPrivacyPolicy" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewAboutUs"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_about_us"
+                app:layout_constraintBottom_toTopOf="@id/view6"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view5" />
+
+            <View
+                android:id="@+id/view6"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewContactUs"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewAboutUs" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewContactUs"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_contact_us"
+                app:layout_constraintBottom_toTopOf="@id/view7"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view6" />
+
+            <View
+                android:id="@+id/view7"
+                style="@style/lineview15"
+                app:layout_constraintBottom_toTopOf="@id/textviewRateApp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/textviewContactUs" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewLogout"
+                style="@style/TextView.SemiBold.sp16.PrimaryBlack"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_logout"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/view7" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginVertical="@dimen/_11sdp"
+            android:background="@drawable/bg_white_8px"
+            android:padding="@dimen/_16sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintMenu"
+            app:layout_constraintVertical_bias="1">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewDeleteAccount"
+                style="@style/TextView.Bold.sp16"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:drawableEnd="@drawable/right_arrow_gray_icon"
+                android:ellipsize="end"
+                android:lines="1"
+                android:text="@string/textview_delete_account"
+                android:textColor="@color/Red"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

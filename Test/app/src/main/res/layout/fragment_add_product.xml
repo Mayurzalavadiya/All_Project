@@ -1,0 +1,400 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:fillViewport="true"
+    tools:context=".ui.fragment.AddProductFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.02" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.1" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineTop2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.2" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:background="@color/green"
+            app:layout_constraintBottom_toBottomOf="@id/guideLineTop2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewBack"
+            android:layout_width="@dimen/_28sdp"
+            android:layout_height="0dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop"
+            app:srcCompat="@drawable/frame_back" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            style="@style/textViewTitleAddProduct"
+            android:gravity="center"
+            android:text="@string/add_ntravel_list"
+            app:layout_constraintEnd_toEndOf="@id/view"
+            app:layout_constraintStart_toStartOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/guideLineTop1" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintTravelTitle"
+            style="@style/productConstraint"
+            android:layout_marginTop="@dimen/_25sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/guideLineTop2">
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                style="@style/hintTextViewAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/travel_title"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintTravelTitle"
+                app:layout_constraintEnd_toEndOf="@id/constraintTravelTitle"
+                app:layout_constraintStart_toStartOf="@id/constraintTravelTitle"
+                app:layout_constraintTop_toTopOf="@id/constraintTravelTitle">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextTravelTitle"
+                    style="@style/textViewAddProduct"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_24sdp"
+                    android:inputType="text"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--                    <androidx.appcompat.widget.AppCompatTextView-->
+<!--                        android:id="@+id/textViewTravelTitle"-->
+<!--                        style="@style/hintTextViewAddProduct"-->
+<!--                        android:includeFontPadding="false"-->
+<!--                        android:text="@string/travel_title"-->
+<!--                        app:layout_constraintBottom_toTopOf="@id/editTextTravelTitle"-->
+<!--                        app:layout_constraintStart_toStartOf="@id/constraintTravelTitle"-->
+<!--                        app:layout_constraintTop_toTopOf="@id/constraintTravelTitle"-->
+<!--                        app:layout_constraintVertical_chainStyle="packed" />-->
+
+<!--                    <androidx.appcompat.widget.AppCompatEditText-->
+<!--                        android:id="@+id/editTextTravelTitle"-->
+<!--                        style="@style/textViewAddProduct"-->
+<!--                        android:inputType="text"-->
+<!--                        android:hint="@string/w_bangkok_hotel_sha_plus"-->
+<!--                        app:layout_constraintBottom_toBottomOf="@id/constraintTravelTitle"-->
+<!--                        app:layout_constraintEnd_toEndOf="@id/constraintTravelTitle"-->
+<!--                        app:layout_constraintStart_toStartOf="@id/constraintTravelTitle"-->
+<!--                        app:layout_constraintTop_toBottomOf="@id/textViewTravelTitle" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintFromDate"
+            style="@style/productConstraint"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintTravelTitle">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutFromDate"
+                style="@style/hintTextViewAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/from_date"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintFromDate"
+                app:layout_constraintEnd_toEndOf="@id/constraintFromDate"
+                app:layout_constraintStart_toStartOf="@id/constraintFromDate"
+                app:layout_constraintTop_toTopOf="@id/constraintFromDate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/textInputEditTextFromDate"
+                    style="@style/textViewAddProduct"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:enabled="false"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_24sdp"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/textViewTravelFromDate"-->
+<!--                style="@style/hintTextViewAddProduct"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="@string/from_date"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/editTextFromDate"-->
+<!--                app:layout_constraintStart_toStartOf="@id/constraintFromDate"-->
+<!--                app:layout_constraintTop_toTopOf="@id/constraintFromDate"-->
+<!--                app:layout_constraintVertical_chainStyle="packed" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/editTextFromDate"-->
+<!--                style="@style/textViewAddProduct"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="@string/_25_mar_2022"-->
+<!--                android:inputType="text"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/constraintFromDate"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/imageViewFromDate"-->
+<!--                app:layout_constraintStart_toStartOf="@id/textViewTravelFromDate"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/textViewTravelFromDate" />-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewFromDate"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintFromDate"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/constraintFromDate"
+                app:layout_constraintTop_toTopOf="@id/constraintFromDate"
+                app:srcCompat="@drawable/round_frame_date_time" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintTODate"
+            style="@style/productConstraint"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintFromDate">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutToDate"
+                style="@style/hintTextViewAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/to_date"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintTODate"
+                app:layout_constraintEnd_toEndOf="@id/constraintTODate"
+                app:layout_constraintStart_toStartOf="@id/constraintTODate"
+                app:layout_constraintTop_toTopOf="@id/constraintTODate">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextTODate"
+                    style="@style/textViewAddProduct"
+                    android:layout_gravity="center"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_24sdp"
+                    android:enabled="false"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/textViewTravelTODate"-->
+<!--                style="@style/hintTextViewAddProduct"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="@string/to_date"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/editTextTODate"-->
+<!--                app:layout_constraintStart_toStartOf="@id/constraintTODate"-->
+<!--                app:layout_constraintTop_toTopOf="@id/constraintTODate"-->
+<!--                app:layout_constraintVertical_chainStyle="packed" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/editTextTODate"-->
+<!--                style="@style/textViewAddProduct"-->
+<!--                android:focusable="false"-->
+<!--                android:hint="@string/_25_mar_2022"-->
+<!--                android:inputType="text"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/constraintTODate"-->
+<!--                app:layout_constraintEnd_toStartOf="@+id/imageViewTODate"-->
+<!--                app:layout_constraintStart_toStartOf="@id/textViewTravelTODate"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/textViewTravelTODate" />-->
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewTODate"
+                android:layout_width="@dimen/_28sdp"
+                android:layout_height="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintTODate"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintEnd_toEndOf="@id/constraintTODate"
+                app:layout_constraintTop_toTopOf="@id/constraintTODate"
+                app:srcCompat="@drawable/round_frame_date_time" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintDescription"
+            style="@style/productConstraint"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintTODate">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutDescription"
+                style="@style/hintTextViewAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/description"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintDescription"
+                app:layout_constraintEnd_toEndOf="@id/constraintDescription"
+                app:layout_constraintStart_toStartOf="@id/constraintDescription"
+                app:layout_constraintTop_toTopOf="@id/constraintDescription">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textInputEditTextDescription"
+                style="@style/textViewAddProduct"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:background="@color/white"
+                android:paddingTop="@dimen/_24sdp"
+                android:gravity="start"
+                android:lineSpacingExtra="@dimen/_3sdp"
+                android:lines="3"
+                android:imeOptions="actionNext"
+                android:paddingStart="0dp"
+                android:paddingEnd="0dp"
+                android:paddingBottom="@dimen/_4sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/textViewTravelDescription"-->
+<!--                style="@style/hintTextViewAddProduct"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="@string/description"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/editTextDescription"-->
+<!--                app:layout_constraintStart_toStartOf="@id/constraintDescription"-->
+<!--                app:layout_constraintTop_toTopOf="@id/constraintDescription"-->
+<!--                app:layout_constraintVertical_chainStyle="packed" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/editTextDescription"-->
+<!--                style="@style/textViewAddProduct"-->
+<!--                android:gravity="start"-->
+<!--                android:hint="@string/description"-->
+<!--                android:lineSpacingExtra="@dimen/_3sdp"-->
+<!--                android:lines="3"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/constraintDescription"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/constraintDescription"-->
+<!--                app:layout_constraintStart_toStartOf="@id/textViewTravelDescription"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/textViewTravelDescription" />-->
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintPrice"
+            style="@style/productConstraint"
+            android:layout_marginTop="@dimen/_8sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintDescription">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/textInputLayoutPriceDescription"
+                style="@style/hintTextViewAddProduct"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/price_per_person"
+                app:boxStrokeWidth="0dp"
+                app:boxStrokeWidthFocused="0dp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintPrice"
+                app:layout_constraintEnd_toEndOf="@id/constraintPrice"
+                app:layout_constraintStart_toStartOf="@id/constraintPrice"
+                app:layout_constraintTop_toTopOf="@id/constraintPrice">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/editTextPrice"
+                    style="@style/textViewAddProduct"
+                    android:layout_width="match_parent"
+                    android:background="@color/white"
+                    android:paddingTop="@dimen/_24sdp"
+                    android:text="@string/_15_550"
+                    android:enabled="false"
+                    android:imeOptions="actionDone"
+                    android:paddingStart="0dp"
+                    android:paddingEnd="0dp"
+                    android:paddingBottom="@dimen/_4sdp" />
+            </com.google.android.material.textfield.TextInputLayout>
+<!--            <androidx.appcompat.widget.AppCompatTextView-->
+<!--                android:id="@+id/textViewTravelPrice"-->
+<!--                style="@style/hintTextViewAddProduct"-->
+<!--                android:includeFontPadding="false"-->
+<!--                android:text="@string/price_per_person"-->
+<!--                app:layout_constraintBottom_toTopOf="@id/editTextPrice"-->
+<!--                app:layout_constraintStart_toStartOf="@id/constraintPrice"-->
+<!--                app:layout_constraintTop_toTopOf="@id/constraintPrice"-->
+<!--                app:layout_constraintVertical_chainStyle="packed" />-->
+
+<!--            <androidx.appcompat.widget.AppCompatEditText-->
+<!--                android:id="@+id/editTextPrice"-->
+<!--                style="@style/textViewAddProduct"-->
+<!--                android:enabled="false"-->
+<!--                android:gravity="start"-->
+<!--                android:lineSpacingExtra="@dimen/_3sdp"-->
+<!--                android:text="@string/_15_550"-->
+<!--                app:layout_constraintBottom_toBottomOf="@id/constraintPrice"-->
+<!--                app:layout_constraintEnd_toEndOf="@id/constraintPrice"-->
+<!--                app:layout_constraintStart_toStartOf="@id/textViewTravelPrice"-->
+<!--                app:layout_constraintTop_toBottomOf="@id/textViewTravelPrice" />-->
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonAddItem"
+            style="@style/buttonProduct"
+            android:layout_marginTop="@dimen/_20sdp"
+            android:layout_marginBottom="@dimen/_22sdp"
+            android:paddingVertical="@dimen/_10sdp"
+            android:text="@string/add_item"
+            app:layout_constrainedHeight="true"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintPrice"
+            app:layout_constraintVertical_bias="1" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

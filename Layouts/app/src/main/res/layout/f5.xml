@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#66FDD8"
+    android:orientation="vertical"
+    >
+
+
+    <View
+        style="@style/custom_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FDE95C"
+        android:gravity="center" />
+    <View
+        style="@style/custom_button"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:background="#EE3043"
+        android:gravity="center" />
+
+    <View
+        style="@style/custom_button"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:background="#2A94EA"
+        android:gravity="center" />
+
+    <View
+        style="@style/custom_button"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:background="#4EB059"
+        android:gravity="center" />
+
+
+
+</FrameLayout>

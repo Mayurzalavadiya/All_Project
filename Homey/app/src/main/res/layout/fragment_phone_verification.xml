@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/White"
+    android:fillViewport="true"
+    tools:context=".ui.auth.fragment.PhoneVerificationFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_8sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintHorizontal_bias="1"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/back_arrow_icon" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewVerification"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="@string/textview_verification"
+            app:layout_constraintBottom_toBottomOf="@id/imageviewBack"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/imageviewBack"
+            app:layout_constraintTop_toTopOf="@id/imageviewBack" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewDescription"
+            style="@style/TextView.Bold.sp22.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_32sdp"
+            android:text="@string/textview_enter_4_digit_verification_code_sent_to_your_number"
+            android:textAlignment="center"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewVerification" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewPhoneNumber"
+            style="@style/TextView.Bold.sp16.colorPrimary"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_18sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/textview__1_850_318_5509"
+            app:layout_constraintEnd_toStartOf="@id/imageviewEdit"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewDescription" />
+
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewEdit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/_9sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/textviewPhoneNumber"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@+id/textviewPhoneNumber"
+            app:layout_constraintTop_toTopOf="@+id/textviewPhoneNumber"
+            app:srcCompat="@drawable/pencial_icon" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraint"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_35sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textviewPhoneNumber">
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp1"
+                style="@style/EditText.Bold.sp16.selector.Background"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp2"
+                app:layout_constraintHorizontal_chainStyle="packed"
+                app:layout_constraintStart_toStartOf="@id/constraint"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp2"
+                style="@style/EditText.Bold.sp16.selector.Background"
+                android:layout_marginHorizontal="@dimen/_16sdp"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp3"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp1"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp3"
+                style="@style/EditText.Bold.sp16.selector.Background"
+                android:imeOptions="actionNext"
+                app:layout_constraintEnd_toStartOf="@id/editTextOtp4"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp2"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/editTextOtp4"
+                style="@style/EditText.Bold.sp16.selector.Background"
+                android:layout_marginStart="@dimen/_19sdp"
+                android:imeOptions="actionDone"
+                app:layout_constraintEnd_toEndOf="@id/constraint"
+                app:layout_constraintStart_toEndOf="@id/editTextOtp3"
+                app:layout_constraintTop_toTopOf="@id/constraint" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewResendcode"
+            style="@style/TextView.Bold.sp16.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:ellipsize="end"
+            android:enabled="false"
+            android:maxLines="1"
+            android:text="@string/textview_resend_code_in"
+            app:layout_constraintEnd_toStartOf="@id/textviewResendTime"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewResendTime"
+            style="@style/TextView.Bold.sp16.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_30sdp"
+            android:ellipsize="end"
+            android:maxLines="1"
+            android:text="@string/_00_0"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/textviewResendcode"
+            app:layout_constraintTop_toBottomOf="@id/constraint" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/buttonVerify"
+            style="@style/Button.Regular.sp16.White.Background"
+            android:layout_marginVertical="@dimen/_16sdp"
+            android:elevation="0dp"
+            android:stateListAnimator="@null"
+            android:text="@string/button_verify"
+            android:translationZ="0dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewResendcode"
+            app:layout_constraintVertical_bias="1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>

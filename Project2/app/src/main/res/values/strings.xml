@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Project2</string>
+
+    <string name="sign_up">Sign Up</string>
+    <string name="log_in">Log In</string>
+    <string name="name">Name</string>
+    <string name="sign_in">Sign In</string>
+    <string name="email_address">Email address</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="forgot_password_underline"><u>Forgot Password?</u></string>
+    <string name="still_without_account">Still without account?</string>
+    <string name="yoga_app_access_description">You can use your Fingerprint\nto grant to access to the app.</string>
+    <string name="already_have_account">Already have account?</string>
+    <string name="create_your_account">Create your account</string>
+    <string name="from_groceries_to_important_projects_nwe_help_to_remember_it_all">From groceries to important projects\nwe help to remember it all</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="ahmedabad">Ahmedabad</string>
+    <string name="_105">105</string>
+    <string name="_56">56</string>
+    <string name="personal">Personal</string>
+    <string name="_24_task">24 task</string>
+    <string name="completed_task">Completed Task</string>
+    <string name="created_task">Created Task</string>
+    <string name="sely_leeza">Sely Leeza</string>
+    <string name="_52_task">52 task</string>
+    <string name="create_one">Create one</string>
+    <string name="event">Event</string>
+    <string name="_12_task">12 task</string>
+    <string name="statistics">Statistics</string>
+    <string name="march_2018">March 2018</string>
+    <string name="_42">42%</string>
+    <string name="_86">86%</string>
+    <string name="_65">65%</string>
+    <string name="meet">Meet</string>
+    <string name="work">Work</string>
+    <string name="private_">Private</string>
+    <string name="calendar">Calendar</string>
+    <string name="task_sheet">Task Sheet</string>
+    <string name="setting">Setting</string>
+    <string name="password">Password</string>
+    <string name="addition">+</string>
+
+    //Validation
+    <string name="please_enter_name">Please enter name</string>
+    <string name="please_enter_an_email_address">Please enter an email address</string>
+    <string name="please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="please_enter_a_password">Please enter a password</string>
+    <string name="password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="please_enter_a_confirm_password">Please enter a confirm password</string>
+    <string name="password_mitch_match">Password mitch match</string>
+    <string name="signup_successfully">Signup Successfully</string>
+    <string name="login_successfully">Login Successfully</string>
+
+</resources>

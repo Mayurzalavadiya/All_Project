@@ -1,0 +1,32 @@
+
+d
+java:S1192("IDefine a constant instead of duplicating this literal "RESPONSE" 4 times.(û¯ƒïÿÿÿÿÿ
+f
+java:S1192I"KUse already-defined constant 'EMAIL' instead of duplicating its value here.(™Æéüÿÿÿÿ
+k	java:S117u"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡Õáııÿÿÿÿ
+f	java:S117v"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ä²ñ‹
+k	java:S117y"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(…”“Ëÿÿÿÿÿ
+C
+java:S1604p"(Make this anonymous inner class a lambda(Ø²ôòûÿÿÿÿ
+h	java:S116("NRename this field "TAG" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(û¯ƒïÿÿÿÿÿ
+d
+java:S1845/"NRename field "email" to prevent any misunderstanding/clash with field "EMAIL".(ãËÓ
+9
+java:S1659/"#Declare "email" on a separate line.(ãËÓ
+P
+java:S18746"5Remove this use of "sdkInitialize"; it is deprecated.(²×ØĞûÿÿÿÿ
+I
+java:S18747"3Remove this use of "activateApp"; it is deprecated.(°¤¼‰
+U
+java:S1874I":Remove this use of "setReadPermissions"; it is deprecated.(™Æéüÿÿÿÿ
+Q	java:S125P"<This block of commented-out lines of code should be removed.(æÁéİ
+`
+java:S1874i"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(ŸŒ¹Ñ
+\
+java:S2147˜"ECombine this catch with the one at line 150, which has the same body.(”ı¾
+R
+java:S1874"6Remove this use of "GET_SIGNATURES"; it is deprecated.(µ‹€üûÿÿÿÿ
+N
+java:S1874"2Remove this use of "signatures"; it is deprecated.(½ëò‹ùÿÿÿÿ
+D
+java:S1068+")Remove this unused "EMAIL" private field.(şªçıüÿÿÿÿ

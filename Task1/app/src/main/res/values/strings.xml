@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Task1</string>
+    <string name="login">LOGIN</string>
+    <string name="enter_your_registered_email_password_to_continue"><![CDATA[Enter your registered email & password to continue]]></string>
+    <string name="email">Email</string>
+    <string name="password">Password</string>
+    <string name="log_in">Login</string>
+    <string name="forgot_password">Forgot Password?</string>
+    <string name="create_account">CREATE ACCOUNT</string>
+    <string name="fill_in_your_personal_details_below_to_create_on_account">Fill in your personal details below to create on account</string>
+    <string name="gender">Gender</string>
+    <string name="i_agree_with_terms_conditions"><![CDATA[I agree with Samtur\'s Terms & Conditions]]></string>
+    <string name="create">Create</string>
+    <string name="your_full_name">Your full name</string>
+    <string name="mobile_number">Mobile Number</string>
+    <string name="male">Male</string>
+
+
+    //Validation
+    <string name="validation_please_enter_name">Please enter name</string>
+    <string name="validation_please_enter_mobile_number">Please enter mobile number</string>
+    <string name="validation_please_enter_a_valid_mobile_number">Please enter a 10 digits mobile number</string>
+    <string name="validation_please_enter_an_email_address">Please enter an email address</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter a valid email address</string>
+    <string name="validation_please_enter_a_password">Please enter a password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_signup_successfully">Signup Successfully</string>
+    <string name="validation_login_successfully">Login Successfully</string>
+    <string name="validation_please_check_terms_condition">Please select terms &amp; conditions</string>
+</resources>

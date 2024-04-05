@@ -1,0 +1,485 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".DashboardActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp">
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.01" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guidelineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.99" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDashboard"
+            style="@style/title"
+            android:layout_marginTop="20dp"
+            android:text="@string/dashboard"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:background="@color/editTextHint"
+            app:layout_constraintEnd_toEndOf="@+id/textViewDashboard"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textViewDashboard" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageViewProfile"
+            android:layout_width="100dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@+id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/view"
+            app:srcCompat="@drawable/woman" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSignIn"
+            style="@style/title"
+            android:layout_marginStart="20dp"
+            android:text="@string/sely_leeza"
+            android:textColor="@color/black"
+            android:textStyle="normal"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toTopOf="@id/textViewCity"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toEndOf="@+id/imageViewProfile"
+            app:layout_constraintTop_toTopOf="@+id/imageViewProfile"
+            app:layout_constraintVertical_bias="0.3"
+            app:layout_constraintVertical_chainStyle="packed" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/ahmedabad"
+            android:textSize="18sp"
+            app:layout_constrainedWidth="true"
+            app:layout_constraintBottom_toBottomOf="@id/imageViewProfile"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintStart_toStartOf="@+id/textViewSignIn"
+            app:layout_constraintTop_toBottomOf="@id/textViewSignIn" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/bg_border"
+            android:paddingVertical="15dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/imageViewProfile">
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTotalCreateTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_105"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@id/textViewCreateTask"
+                app:layout_constraintEnd_toStartOf="@id/textViewTotalCompleteTask"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewTotalCompleteTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_56"
+                android:textColor="@color/black"
+                android:textSize="25sp"
+                app:layout_constraintBottom_toTopOf="@id/textViewCompleteTask"
+                app:layout_constraintEnd_toEndOf="@id/constraintLayout"
+                app:layout_constraintStart_toEndOf="@id/textViewTotalCreateTask"
+                app:layout_constraintTop_toTopOf="@id/constraintLayout" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCreateTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/created_task"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+                app:layout_constraintEnd_toStartOf="@id/textViewCompleteTask"
+                app:layout_constraintStart_toStartOf="@id/constraintLayout"
+                app:layout_constraintTop_toBottomOf="@id/textViewTotalCreateTask" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewCompleteTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/completed_task"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayout"
+                app:layout_constraintEnd_toEndOf="@+id/constraintLayout"
+                app:layout_constraintStart_toEndOf="@id/textViewCreateTask"
+                app:layout_constraintTop_toBottomOf="@id/textViewTotalCompleteTask" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutPersonal"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewPerson"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayoutPersonal"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayoutPersonal"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayoutPersonal"
+                app:srcCompat="@drawable/ic_person" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPersonal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/personal"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/textViewPersonalTask"
+                app:layout_constraintStart_toEndOf="@id/imageViewPerson"
+                app:layout_constraintTop_toTopOf="@id/imageViewPerson" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewPersonalTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_24_task"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewPerson"
+                app:layout_constraintStart_toStartOf="@id/textViewPersonal"
+                app:layout_constraintTop_toBottomOf="@id/textViewPersonal" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutWork"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/darkBlue"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutPersonal">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewWork"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayoutWork"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayoutWork"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayoutWork"
+                app:srcCompat="@drawable/ic_work" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewWork"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/work"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/textViewWorkTask"
+                app:layout_constraintStart_toEndOf="@id/imageViewWork"
+                app:layout_constraintTop_toTopOf="@id/imageViewWork" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewWorkTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_52_task"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewWork"
+                app:layout_constraintStart_toStartOf="@id/textViewWork"
+                app:layout_constraintTop_toBottomOf="@id/textViewWork" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayoutEvent"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:background="@color/blue"
+            android:padding="10dp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayoutWork"
+            tools:ignore="ExtraText">
+
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageViewEvent"
+                android:layout_width="70dp"
+                android:layout_height="0dp"
+                android:tint="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/constraintLayoutEvent"
+                app:layout_constraintStart_toStartOf="@+id/constraintLayoutEvent"
+                app:layout_constraintTop_toTopOf="@+id/constraintLayoutEvent"
+                app:srcCompat="@drawable/ic_time" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEvent"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:gravity="center"
+                android:text="@string/event"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toTopOf="@id/textViewEventTask"
+                app:layout_constraintStart_toEndOf="@id/imageViewEvent"
+                app:layout_constraintTop_toTopOf="@id/imageViewEvent" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textViewEventTask"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/_12_task"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                app:layout_constraintBottom_toBottomOf="@id/imageViewEvent"
+                app:layout_constraintStart_toStartOf="@id/textViewEvent"
+                app:layout_constraintTop_toBottomOf="@id/textViewEvent" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewStatistics"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="start"
+            android:text="@string/statistics"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toStartOf="@id/textViewMarch2018"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayoutEvent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMarch2018"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="end"
+            android:text="@string/march_2018"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/textViewStatistics"
+            app:layout_constraintTop_toBottomOf="@id/constraintLayoutEvent" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMeetPercentage"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="@string/_42"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewWorkPercentage"
+            app:layout_constraintEnd_toStartOf="@id/textViewWorkPercentage"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatistics" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewWorkPercentage"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:text="@string/_86"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintEnd_toStartOf="@id/textViewPrivatePercentage"
+            app:layout_constraintStart_toEndOf="@id/textViewMeetPercentage"
+            app:layout_constraintTop_toBottomOf="@id/textViewStatistics" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPrivatePercentage"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:text="@string/_65"
+            android:textColor="@color/black"
+            android:textSize="25sp"
+            app:layout_constraintBottom_toBottomOf="@id/textViewWorkPercentage"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/textViewWorkPercentage"
+            app:layout_constraintTop_toBottomOf="@id/textViewMarch2018" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewMeet"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/meet"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@id/textViewWork1"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewMeetPercentage" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewWork1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/work"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toStartOf="@id/textViewPrivate"
+            app:layout_constraintStart_toEndOf="@id/textViewMeet"
+            app:layout_constraintTop_toTopOf="@id/textViewMeet" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPrivate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/private_"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toEndOf="@id/textViewWork1"
+            app:layout_constraintTop_toTopOf="@id/textViewMeet" />
+
+        <View
+            android:id="@+id/view2"
+            android:layout_width="0dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="15sp"
+            android:background="@color/editTextHint"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toBottomOf="@id/textViewMeet" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewTaskSheet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="@string/task_sheet"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/textViewAdd"
+            app:layout_constraintStart_toStartOf="@id/guidelineStart"
+            app:layout_constraintTop_toTopOf="@id/textViewAdd" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewCalendar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="@string/calendar"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/textViewAdd"
+            app:layout_constraintEnd_toStartOf="@id/textViewSetting"
+            app:layout_constraintStart_toEndOf="@id/textViewTaskSheet"
+            app:layout_constraintTop_toTopOf="@id/textViewAdd" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewSetting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_border"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:text="@string/setting"
+            android:textSize="15sp"
+            android:visibility="visible"
+            app:layout_constraintBottom_toBottomOf="@id/textViewAdd"
+            app:layout_constraintEnd_toStartOf="@id/textViewAdd"
+            app:layout_constraintStart_toEndOf="@id/textViewCalendar"
+            app:layout_constraintTop_toTopOf="@id/textViewAdd" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewAdd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/bg_border"
+            android:gravity="center"
+            android:paddingHorizontal="5dp"
+            android:text="@string/addition"
+            android:textSize="20sp"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@id/guidelineEnd"
+            app:layout_constraintTop_toBottomOf="@id/view2" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
+

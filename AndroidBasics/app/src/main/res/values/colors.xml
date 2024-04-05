@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="blue">#1E88E5</color>
+    <color name="lightBlue">#00B8D4</color>
+    <color name="yellow">#FFEA00</color>
+    <color name="red">#D50000</color>
+    <color name="green">#00C853</color>
+    <color name="orange">#F4511E</color>
+    <color name="Brown">#FF6D00</color>
+    <color name="skyBlue">#00897B</color>
+
+    <color name="darkBlue">#182440</color>
+    <color name="l1BgButton">#3550E3</color>
+    <color name="l1BgEditText">#25314C</color>
+    <color name="l1EditText">#8F9091</color>
+    <color name="l1BgIcon">#F1F1F3</color>
+
+
+    <color name="l2BgButton">#0E67F5</color>
+    <color name="l2EditText">#D9D9D9</color>
+    <color name="l4Bg">#FB9387</color>
+    <color name="pink">#EC2170</color>
+    <color name="lightPink">#F86895</color>
+    <color name="lightOrange">#E86165</color>
+    <color name="lightYellow">#F29656</color>
+
+</resources>

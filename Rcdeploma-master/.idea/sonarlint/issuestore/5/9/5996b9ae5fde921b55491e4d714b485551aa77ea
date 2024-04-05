@@ -1,0 +1,20 @@
+
+d
+java:S1604N"(Make this anonymous inner class a lambda(îß’ÕJ$e5c61d4d-da40-44fd-8638-63a86e6f81b7
+d
+java:S1604U"(Make this anonymous inner class a lambda(ÖÜˆìJ$05e274b7-0cfa-4d49-96bb-fe30ffc72122
+d
+java:S1604^"(Make this anonymous inner class a lambda(ÓŒÖŒJ$e531c432-0307-4fc3-b4cf-244623c3e122
+i
+java:S1604h"(Make this anonymous inner class a lambda(âéûåıÿÿÿÿJ$7cef6ba7-28aa-4e63-bab7-d4c43af98884
+’	java:S116 "WRename this field "CONTACT_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Í§ÜJ$7f9f8093-e46b-4510-9b17-1df8f5836620
+’
+java:S1874;"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶şÿÿÿÿ8‚ŞÙæÚ1J$767f434d-e545-43f8-b59b-0711a2dd8a44
+“
+java:S3776;"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ó»×¶şÿÿÿÿJ$cd87828b-7b97-4e92-8297-765a12f918d6
+y
+java:S1854J">Remove this useless assignment to local variable "permResult".(†¾ÈJ$c9ed6e23-72b9-411e-a78e-9c5cbbd54a9f
+j
+java:S1481J"/Remove this unused "permResult" local variable.(†¾ÈJ$0e34a3f5-184a-41c7-918c-0fd3e6074c87
+{
+java:S1155">Use isEmpty() to check whether the collection is empty or not.(êÍØşJ$1ef39ed8-e7ea-4024-aa05-dab18b684052

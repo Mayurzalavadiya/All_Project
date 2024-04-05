@@ -1,0 +1,343 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="@color/ColorBackground"
+    android:fillViewport="true"
+    android:background="@color/White54per"
+    tools:context=".ui.home.fragment.MainFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideLineEnd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_300sdp"
+            android:background="@color/colorPrimary"
+            android:foreground="@drawable/main_bg"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewLogo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_10sdp"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/logo_white" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageviewNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_5sdp"
+            android:padding="@dimen/_3sdp"
+            app:layout_constraintBottom_toBottomOf="@+id/imageviewLogo"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintTop_toTopOf="@+id/imageviewLogo"
+            app:srcCompat="@drawable/notifivation_icon" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewLocation"
+            style="@style/TextView.Bold.sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="@dimen/_13sdp"
+            android:drawableStart="@drawable/location_icon"
+            android:drawablePadding="@dimen/_8sdp"
+            android:drawableTint="@color/White"
+            android:text="Newyork, USA"
+            android:textColor="@color/White"
+            app:layout_constraintBottom_toBottomOf="@+id/imageviewLogo"
+            app:layout_constraintEnd_toStartOf="@+id/imageviewNotification"
+            app:layout_constraintTop_toTopOf="@+id/imageviewLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewWelcome"
+            style="@style/TextView.Regular.sp14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_28sdp"
+            android:text="Welcome John !"
+            android:textColor="@color/White"
+            app:layout_constraintStart_toStartOf="@+id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/imageviewLogo" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textvieFindYourStayPlaces"
+            style="@style/TextView.Bold.sp20.White"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Find Your Stay Places"
+            app:layout_constraintStart_toStartOf="@+id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@+id/textviewWelcome" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLocationDetail"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_12sdp"
+            android:background="@drawable/bg_white_15px"
+            android:paddingHorizontal="@dimen/_17sdp"
+            android:paddingVertical="@dimen/_14sdp"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/textvieFindYourStayPlaces">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewLocation"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/edittextWhereStay"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textviewWhereStay"
+                app:srcCompat="@drawable/location_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewWhereStay"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:text="Where do you want to stay?"
+                app:layout_constraintBottom_toTopOf="@id/edittextWhereStay"
+                app:layout_constraintStart_toEndOf="@id/imageviewLocation"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_chainStyle="packed" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextWhereStay"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/Gray"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:text="@string/textview_new_york_usa"
+                app:layout_constraintBottom_toTopOf="@id/view"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@id/textviewWhereStay"
+                app:layout_constraintTop_toBottomOf="@id/textviewWhereStay" />
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@color/Gray"
+                app:layout_constraintBottom_toTopOf="@id/textviewCheckInCheckOut"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittextWhereStay" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewdate"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@+id/edittextCheckInCheckOut"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/textviewCheckInCheckOut"
+                app:srcCompat="@drawable/booking_icon" />
+
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewCheckInCheckOut"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="Check In - Check Out "
+                app:layout_constraintBottom_toTopOf="@id/edittextCheckInCheckOut"
+                app:layout_constraintStart_toEndOf="@id/imageviewdate"
+                app:layout_constraintTop_toBottomOf="@id/view" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextCheckInCheckOut"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/Gray"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:text="@string/textview__17_mar_2022_03_00_pm"
+                app:layout_constraintBottom_toTopOf="@id/view2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewCheckInCheckOut"
+                app:layout_constraintTop_toBottomOf="@id/textviewCheckInCheckOut" />
+
+            <View
+                android:id="@+id/view2"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@color/Gray"
+                app:layout_constraintBottom_toTopOf="@id/textviewAdultsChild"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittextCheckInCheckOut" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewAdultsChild"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/edittextAdultsChild"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textviewAdultsChild"
+                app:srcCompat="@drawable/person_group_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewAdultsChild"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="@string/textview_adults_child"
+                app:layout_constraintBottom_toTopOf="@id/edittextAdultsChild"
+                app:layout_constraintStart_toEndOf="@id/imageviewAdultsChild"
+                app:layout_constraintTop_toBottomOf="@id/view2" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextAdultsChild"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/Gray"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:text="2 Child, 2 Adult"
+                app:layout_constraintBottom_toTopOf="@id/view3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewAdultsChild"
+                app:layout_constraintTop_toBottomOf="@id/textviewAdultsChild" />
+
+            <View
+                android:id="@+id/view3"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_1sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:background="@color/Gray"
+                app:layout_constraintBottom_toTopOf="@id/textviewRooms"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittextAdultsChild" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/imageviewRooms"
+                android:layout_width="0dp"
+                android:layout_height="@dimen/_15sdp"
+                app:layout_constraintBottom_toBottomOf="@id/edittextRooms"
+                app:layout_constraintDimensionRatio="1:1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/textviewRooms"
+                app:srcCompat="@drawable/rooms_icon" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/textviewRooms"
+                style="@style/TextView.Regular.sp13.Grey"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/_9sdp"
+                android:layout_marginTop="@dimen/_11sdp"
+                android:text="Rooms"
+                app:layout_constraintBottom_toTopOf="@id/edittextRooms"
+                app:layout_constraintStart_toEndOf="@id/imageviewRooms"
+                app:layout_constraintTop_toBottomOf="@id/view3" />
+
+            <androidx.appcompat.widget.AppCompatEditText
+                android:id="@+id/edittextRooms"
+                style="@style/EditText.Bold.sp16.PrimaryBlack.Background"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:background="@android:color/transparent"
+                android:backgroundTint="@color/Gray"
+                android:imeOptions="actionNext"
+                android:inputType="text"
+                android:text="2 Rooms"
+                app:layout_constraintBottom_toTopOf="@id/buttonSearch"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/textviewRooms"
+                app:layout_constraintTop_toBottomOf="@id/textviewRooms" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSearch"
+                style="@style/Button.Regular.sp16.White.Background"
+                android:layout_marginTop="@dimen/_12sdp"
+                android:backgroundTint="@color/Orange"
+                android:stateListAnimator="@null"
+                android:text="search"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/edittextRooms"
+                app:layout_constraintVertical_bias="1" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewNearbyHotels"
+            style="@style/TextView.Bold.sp18.PrimaryBlack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="Nearby Hotels"
+            app:layout_constraintEnd_toStartOf="@id/textviewViewAll"
+            app:layout_constraintHorizontal_chainStyle="spread_inside"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintTop_toBottomOf="@id/constraintLocationDetail"
+            app:layout_constraintVertical_chainStyle="spread_inside" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewViewAll"
+            style="@style/TextView.Bold.sp14.Gray"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ellipsize="end"
+            android:lines="1"
+            android:text="View All"
+            app:layout_constraintBottom_toBottomOf="@id/textviewNearbyHotels"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            app:layout_constraintStart_toEndOf="@id/textviewNearbyHotels"
+            app:layout_constraintTop_toTopOf="@id/guideLineStart"
+            app:layout_constraintWidth_max="@dimen/_160sdp" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:clipToPadding="true"
+            android:nestedScrollingEnabled="false"
+            android:layout_marginTop="@dimen/_20sdp"
+            app:layout_constraintTop_toBottomOf="@id/textviewNearbyHotels"
+            app:layout_constraintStart_toStartOf="@id/guideLineStart"
+            app:layout_constraintEnd_toEndOf="@id/guideLineEnd"
+            tools:listitem="@layout/list_view_favorite_item" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>
+

@@ -1,0 +1,27 @@
+
+‘	java:S117E"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ûé©ùüÿÿÿÿJ$6058b986-cf68-4d17-869c-192c769ce900
+‘	java:S117F"QRename this local variable to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Åœü ûÿÿÿÿJ$ccf7e923-161c-49aa-8cb9-fa7adf2d1e1e
+i
+java:S16045"(Make this anonymous inner class a lambda(éÅ€ùÿÿÿÿJ$72046d61-2478-4167-8819-9a3a43a0d0ea
+d
+java:S1604>"(Make this anonymous inner class a lambda(åüÅ¾J$e0a58cd5-087d-4d6d-9531-dbc0aef74b78
+e
+java:S1604"(Make this anonymous inner class a lambda(ñ ÙJ$65d83bb8-33a6-4e76-9d41-02147374aa3e
+d
+java:S1604”"(Make this anonymous inner class a lambda(þ³×:J$269debaf-0bca-42a2-a486-7970f049327f
+e
+java:S1604¡"(Make this anonymous inner class a lambda(ˆŸÑ´J$bc417faf-7b58-4b2a-92f1-9904fe998796
+d
+java:S1604«"(Make this anonymous inner class a lambda(þ³×:J$a193c135-e19b-4389-adb2-ee520a149f38
+š	java:S116*"ZRename this field "PERMISSION_CODE" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÿñë±ÿÿÿÿÿJ$0a288d08-8488-4f51-a275-3f28f2c15025
+c
+java:S1659&""Declare "scan" on a separate line.(¯–ÕþÿÿÿÿJ$881bc6b5-f6a2-4e4e-8d0e-0a9460c7f54f
+‹
+java:S1874u"JDon't override a deprecated method or explicitly mark it as "@Deprecated".(Ó»×¶þÿÿÿÿJ$54aac7ba-1dc5-4d6f-b09a-db68fd80a950
+“
+java:S3776u"RRefactor this method to reduce its Cognitive Complexity from 17 to the 15 allowed.(Ó»×¶þÿÿÿÿJ$57eb4926-c78d-4e30-9ece-794d341c04d4
+z
+java:S1854‡">Remove this useless assignment to local variable "permResult".(†¾ÈJ$95933d71-6a82-4426-abf7-8fe71811cf7c
+w	java:S125v"<This block of commented-out lines of code should be removed.(†ùÒ£J$20a7fe53-5d2a-4d8c-a7e7-aaed9f67af13
+k
+java:S1481‡"/Remove this unused "permResult" local variable.(†¾ÈJ$23faff65-84f6-4ff4-9552-bfe3e9320955

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/_1sdp"
+    android:layout_marginVertical="@dimen/_7sdp"
+    app:cardCornerRadius="@dimen/_3sdp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraint"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingVertical="@dimen/_5sdp"
+        android:paddingStart="@dimen/_5sdp"
+        android:paddingEnd="@dimen/_9sdp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/imageview"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="0dp"
+            app:layout_constraintBottom_toBottomOf="@id/constraint"
+            app:layout_constraintDimensionRatio="1:1"
+            app:layout_constraintStart_toStartOf="@id/constraint"
+            app:layout_constraintTop_toTopOf="@id/constraint"
+            app:srcCompat="@drawable/bg_button_4px_radius" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewTitleGoal"
+            style="@style/TextView.SemiBold.sp16.DarkBlue.ConstrainedWidth_Bias"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:text="@string/textview_medication"
+            app:layout_constraintBottom_toTopOf="@id/edittextSteps"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintStart_toEndOf="@id/imageview"
+            app:layout_constraintTop_toTopOf="@id/imageview" />
+
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textviewSteps"
+            style="@style/TextView.Regular.sp8.DarkBlue.wrap"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:text="@string/textview_2540_steps"
+            app:layout_constraintBottom_toBottomOf="@id/imageview"
+            app:layout_constraintEnd_toStartOf="@id/textViewDecimal"
+            app:layout_constraintHorizontal_bias="0"
+            app:layout_constraintHorizontal_chainStyle="packed"
+            app:layout_constraintStart_toEndOf="@id/imageview"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTitleGoal" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/edittextSteps"
+            style="@style/EditText.Regular.sp6.DarkBlue.Background"
+            android:layout_marginStart="@dimen/_16sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_3sdp"
+            android:imeOptions="actionDone"
+            android:inputType="number"
+            android:maxLength="6"
+            android:visibility="invisible"
+            android:hint="@string/edittext_enter"
+            app:layout_constraintBottom_toBottomOf="@id/imageview"
+            app:layout_constraintStart_toEndOf="@id/imageview"
+            app:layout_constraintTop_toBottomOf="@+id/textviewTitleGoal" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewDecimal"
+            style="@style/TextView.Regular.sp8.DarkBlue.wrap"
+            android:layout_marginStart="@dimen/_3sdp"
+            app:layout_goneMarginStart="@dimen/_43sdp"
+            android:text="@string/textview_steps"
+            app:layout_constraintBottom_toBottomOf="@id/textviewSteps"
+            app:layout_constraintEnd_toStartOf="@id/textViewPerDay"
+            app:layout_constraintStart_toEndOf="@id/textviewSteps"
+            app:layout_constraintTop_toTopOf="@+id/textviewSteps" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewPerDay"
+            style="@style/TextView.Regular.sp8.DarkBlue.wrap"
+            android:layout_marginStart="@dimen/_2sdp"
+            android:text="@string/textview_per_day"
+            app:layout_constraintBottom_toBottomOf="@id/textviewSteps"
+            app:layout_constraintEnd_toEndOf="@id/constraint"
+            app:layout_constraintStart_toEndOf="@id/textViewDecimal"
+            app:layout_constraintTop_toTopOf="@+id/textviewSteps" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewEdit"
+            style="@style/TextView.Regular.sp8.Purple.wrap"
+            android:text="@string/textview_edit_goal"
+            android:textColor="@color/Purple"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/textViewUpdate"
+            style="@style/TextView.Regular.sp8.Purple.wrap"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:text="@string/update"
+            android:textColor="@color/Purple"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="@+id/edittextSteps"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/edittextSteps" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">MVVM</string>
+    <string name="click">Click</string>
+    <string name="count">Count</string>
+    <string name="api_call_with_view_model">Api Call With View Model</string>
+    <string name="dagger">Dagger</string>
+    <string name="login">Login</string>
+    <string name="email">Email</string>
+    <string name="please_enter_email">Please enter email</string>
+    <string name="password">Password</string>
+    <string name="please_enter_password">Please enter password</string>
+
+    <string name="validation_please_enter_an_email_address">Please enter email address</string>
+    <string name="validation_please_enter_a_valid_email_address">Please enter valid email address</string>
+    <string name="validation_please_enter_a_password">Please enter password</string>
+    <string name="validation_password_length_must_be_6_digits">Password length must be 6 digits</string>
+    <string name="validation_please_enter_title">Please enter a title</string>
+    <string name="validation_please_enter_a_description">Please enter a description</string>
+    <string name="validation_please_enter_a_location">Please enter a location</string>
+    <string name="save">Save</string>
+    <string name="next">Next</string>
+    <string name="share_pref_task">Share Pref Task</string>
+    <string name="get_value">Get Email</string>
+
+</resources>

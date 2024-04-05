@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Services</string>
+    <string name="button_background_service">BackGround Service</string>
+    <string name="button_foreground_services">Foreground Services</string>
+    <string name="button_bound_services">Bound Services</string>
+    <string name="button_push_notification">Push Notification</string>
+    <string name="notification_activity">Notification</string>
+    <string name="button_step_counter">Step Counter</string>
+    <string name="stop">Stop</string>
+    <string name="start">Start</string>
+    <string name="steps">Steps: %1$s</string>
+
+    <string name="heading">Services In Android</string>
+    <string name="startButtonText">Start the Service</string>
+    <string name="stopButtonText">Stop the Service</string>
+    <string name="button_media_service">media Service</string>
+
+    <string name="reset_stopwatch">Reset Stopwatch</string>
+    <string name="toggle_stopwatch">Toggle Stopwatch</string>
+    <string name="stopwatch">Stop Watch</string>
+    <string name="already_running_process">Already running process</string>
+    <string name="progress_notification">Progress Notification</string>
+    <string name="task_in_progress">Task in progress…</string>
+    <string name="task_complete">%1$s% Task complete</string>
+    <string name="task_completed">Task completed</string>
+    <string name="start_services">Start Services</string>
+    <string name="stop_services">Stop Services</string>
+    <string name="get_count">Get Count</string>
+    <string name="next_activity">Next Activity</string>
+    <string name="work_manager_demo">Work Manager Demo</string>
+    <string name="simple_notification">Simple Notification</string>
+    <string name="redirect_activity_nnotification">Redirect Activity\nNotification</string>
+    <string name="custom_notification">Custom Notification</string>
+
+</resources>
